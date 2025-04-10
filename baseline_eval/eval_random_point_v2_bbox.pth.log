@@ -113,3 +113,19 @@
 2025-04-10 13:12:31 - INFO - args: Namespace(model_type='vit_t', checkpoint_path='/data2/wuxinrui/RA-L/MobileSAM/trained_models/wxr_modified_mobilesam/random_point_v2_bbox.pth', test_img_path='/data2/wuxinrui/Projects/ICCV/MIMC_FINAL/seen/test_list', label_path='/data2/wuxinrui/Projects/ICCV/jsons_for_salient_instance_segmentation/test_1_prompts.json', label_num=5, image_size=1024, visualize_mask_path='/data2/wuxinrui/RA-L/MobileSAM/baseline_eval/temp', ori_SAM=False)
 2025-04-10 13:12:35 - INFO - ##################################################INFERENCE_MODE = test##################################################
 2025-04-10 13:12:35 - INFO - ##################################################label_path = /data2/wuxinrui/Projects/ICCV/jsons_for_salient_instance_segmentation/test_5_prompts.json##################################################
+2025-04-10 13:29:12 - INFO - bbox_PA: 0.9897420297942197
+2025-04-10 13:29:12 - INFO - bbox_IoU: 0.8279244104553276
+2025-04-10 13:29:12 - INFO - bbox_Dice: 0.8983947337513462
+2025-04-10 13:29:12 - INFO - bbox_Precision: 0.8810680288226241
+2025-04-10 13:29:12 - INFO - bbox_Recall: 0.9261904725096411
+2025-04-10 13:29:12 - INFO - bbox_F1 Score: 0.8983947337513462
+2025-04-10 13:29:12 - INFO - bbox_MAE: 0.010257970541715622
+2025-04-10 13:29:12 - INFO - bbox_MSE: 0.010257970541715622
+2025-04-10 13:29:12 - INFO - point_PA: 0.9848775501834449
+2025-04-10 13:29:12 - INFO - point_IoU: 0.7631166885997742
+2025-04-10 13:29:12 - INFO - point_Dice: 0.8506428845732857
+2025-04-10 13:29:12 - INFO - point_Precision: 0.8613292825159763
+2025-04-10 13:29:12 - INFO - point_Recall: 0.8717567966861267
+2025-04-10 13:29:12 - INFO - point_F1 Score: 0.8506428845732857
+2025-04-10 13:29:12 - INFO - point_MAE: 0.015122450888156891
+2025-04-10 13:29:12 - INFO - point_MSE: 0.015122450888156891
