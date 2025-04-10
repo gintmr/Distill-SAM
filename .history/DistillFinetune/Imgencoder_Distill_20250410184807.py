@@ -133,8 +133,6 @@ class Imgencoder_Distill(AbstractDistillFinetuner):
                 num_masks = sum([len(b) for b in bboxes])
 
                 loss_focal = loss_dice = loss_iou = accurare_masks = 0.
-                BS_IoU = []
-                BS_pa = []
                 tp, fp, fn, tn = [], [], [], []
                 if self.multimask:
                     num_masks *= 3
@@ -209,40 +207,42 @@ class Imgencoder_Distill(AbstractDistillFinetuner):
                     
                     ext_name = coco_image_name.split('.')[-1]
                     step = self.current_epoch
-                    training_visual_path = f"/data2/wuxinrui/RA-L/MobileSAM/training_visual_distill/{step}"
+                    training_visual_path = f"/data2/wuxinrui/RA-L/MobileSAM/training_visual/{step}"
                     if not os.path.exists(training_visual_path):
                         os.makedirs(training_visual_path, exist_ok=True)
                     #G 1% to save images
                     if random.random() < 0.01:
+                        output_path_pred = os.path.join(training_visual_path, f"{step}_{coco_image_name.replace(ext_name, '_pred.jpg')}")
+                        output_path_GT = os.path.join(training_visual_path, f"{step}_{coco_image_name.replace(ext_name, '_GT.jpg')}")
+                        output_path_point = os.path.join(training_visual_path, f"{step}_{coco_image_name.replace(ext_name, '_point.jpg')}")
                         output_path_combined = os.path.join(training_visual_path, f"{step}_{coco_image_name.replace(ext_name, '_combined.jpg')}")
 
 
-                        pred_mask_array = overlay_mask_on_image(pred_masks, image_array=img, array_out=True, save_img=False)
-                        GT_mask_array = overlay_mask_on_image(iou_label, image_array=img, array_out=True, save_img=False)
-                        point_array = overlay_point_on_image(center_point, image_array=img, array_out=True, save_img=False)
+                        pred_mask_array = overlay_mask_on_image(pred_masks, output_path_pred, image_array=img, array_out=True)
+                        GT_mask_array = overlay_mask_on_image(iou_label, output_path_GT, image_array=img, array_out=True)
+                        point_array = overlay_point_on_image(center_point, output_path_point, image_array=img, array_out=True)
                         combine_visualize_results(pred_mask_array, GT_mask_array, point_array, output_path_combined)
                         
 
                         #G check to avoid too many images in the folder
-                        image_files = [f for f in os.listdir(training_visual_path) if f.endswith(('_combined.jpg'))]
+                        image_files = [f for f in os.listdir(training_visual_path) if f.endswith(('_pred.jpg', '_GT.jpg', '_point.jpg'))]
                         if len(image_files) > 30:
                             #G randomly select three file prefixes
-                            random_prefixes = random.sample(set(f.split('_combined.jpg')[0] for f in image_files), 3)
+                            random_prefixes = random.sample(set(f.split('_GT.jpg')[0] for f in image_files), 3)
                             for prefix in random_prefixes:
-                                for suffix in ('_combined.jpg'):
+                                for suffix in ('_pred.jpg', '_GT.jpg', '_point.jpg', '_combined.jpg'):
                                     file_to_delete = os.path.join(training_visual_path, f"{prefix}{suffix}")
                                     if os.path.exists(file_to_delete):
                                         os.remove(file_to_delete)
                     #G ------- 计算IoU + 可视化输出--------G#
 
-                    single_IoU = np.mean(iou_list)
-                    single_pa = np.mean(pa_list)
-                    BS_IoU.append(single_IoU)
-                    BS_pa.append(single_pa)
+                    pred_masks = masks.squeeze(1)
+                    iou_label = label.squeeze(1) 
+                    pa_list, iou_list = calculate_pa_iou(pred_masks, iou_label)
+                    av_BS_IoU = np.mean(iou_list)
+                    av_BS_pa = np.mean(pa_list)
 
-                    masks.to("cpu")
-                    label.to("cpu")
-                    torch.cuda.empty_cache()
+                    del pred_masks, iou_label
 
                     batch_tp, batch_fp, batch_fn, batch_tn = smp.metrics.get_stats(
                         masks,
@@ -255,14 +255,10 @@ class Imgencoder_Distill(AbstractDistillFinetuner):
                     batch_iou = smp.metrics.iou_score(batch_tp, batch_fp, batch_fn, batch_tn)
                     #G IoU = TP / (TP + FP + FN)
 
-                    # Compute the loss
-                    masks = F.interpolate(masks, scale_factor=0.5, mode="bilinear")
-                    label = F.interpolate(label.float(), scale_factor=0.5, mode="nearest")
+                    # Compute the loss            
                     masks = masks.squeeze(1).flatten(1)
                     label = label.flatten(1)
-
                     loss_focal += sigmoid_focal_loss(masks, label.float(), num_masks, alpha=0.6, gamma=2.5)
-                    
                     #G more information on https://kimi.moonshot.cn/chat/cvf7v67f2enav567m6h0
 
                     loss_dice += dice_loss(masks, label.float(), num_masks)
@@ -271,23 +267,15 @@ class Imgencoder_Distill(AbstractDistillFinetuner):
                     loss_iou += F.mse_loss(iou_predictions, batch_iou, reduction='sum') / num_masks
                     #G the meaning of prediction_iou refers to https://kimi.moonshot.cn/chat/cvf7v67f2enav567m6h0
                     
-                    del iou_predictions, batch_iou
                     tp.append(batch_tp)
                     fp.append(batch_fp)
                     fn.append(batch_fn)
                     tn.append(batch_tn)
 
                     accurare_masks += (batch_tp + batch_tn).sum().item() / (batch_tp + batch_fp + batch_fn + batch_tn).sum().item()
-
-
-            accuracy = accurare_masks / num_masks
-            av_BS_IoU = np.mean(BS_IoU)
-            av_BS_pa = np.mean(BS_pa)
-            del BS_IoU, BS_pa
-                
-            penalty_coefficient = 0.5 * (1 + single_IoU) if single_IoU > 0.5 else 3 * (1 - single_IoU)
+                accuracy = accurare_masks / num_masks
             return {
-                'loss': (5 * loss_focal + loss_dice + loss_iou + self.distill_weight * distill_loss) / penalty_coefficient,  # SAM default loss
+                'loss': 20 * loss_focal + loss_dice + loss_iou + self.distill_weight * distill_loss,  # SAM default loss
                 'loss_focal': loss_focal,
                 'loss_dice': loss_dice,
                 'loss_iou': loss_iou,
@@ -299,6 +287,7 @@ class Imgencoder_Distill(AbstractDistillFinetuner):
                 'fp': torch.cat(fp),
                 'fn': torch.cat(fn),
                 'tn': torch.cat(tn),
+
             }
 
         except Exception as e:

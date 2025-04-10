@@ -305,7 +305,7 @@ def random_croods_in_mask(mask, num_croods=1):
     
     return selected_croods, num_croods
 
-def overlay_point_on_image(center_points, image_path=None, image_array=None, array_out=False, save_img=True, output_path=None):
+def overlay_point_on_image(center_points, output_path, image_path=None, image_array=None, array_out=False):
     """
     将点叠加到原图上并保存。
     :param image_path: 原图路径
@@ -349,14 +349,14 @@ def overlay_point_on_image(center_points, image_path=None, image_array=None, arr
             )
         for point in mask_points:
             cv2.circle(image, (int(point[0]), int(point[1])), 5, random_color, -1)
-    cv2.imwrite(output_path, cv2.cvtColor(image, cv2.COLOR_RGB2BGR)) if save_img else None
+    cv2.imwrite(output_path, cv2.cvtColor(image, cv2.COLOR_RGB2BGR))
     # print(f"Saved: {output_path}")
     if array_out:
         return cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
         
     
 
-def overlay_mask_on_image(mask, image_path=None, image_array=None, mask_color=(178, 102, 255), alpha=0.5, array_out=False, save_img=True, output_path=None):
+def overlay_mask_on_image(mask, output_path, image_path=None, image_array=None, mask_color=(178, 102, 255), alpha=0.5, array_out=False, save_img=True):
     """
     将掩码叠加到原图上并保存。
     :param image_path: 原图路径

@@ -71,17 +71,17 @@ def main():
     # 添加一个名为multimask的参数，类型为布尔型，默认值为False，当该参数被指定时，其值为True，用于生成多掩码
     parser.add_argument("--multimask", action="store_true", help="generate multi masks")
     # 添加一个名为use_bbox的参数，类型为布尔型，默认值为False，当该参数被指定时，其值为True，用于生成多掩码
-    parser.add_argument("--use_bbox", default=False, help="generate multi masks")
+    parser.add_argument("--use_bbox", default=True, help="generate multi masks")
     parser.add_argument("--use_centerpoint", action="store_true", help="use only one center point", default=False)
     parser.add_argument('--every_n_train_steps', default=500)
     parser.add_argument("--batch_size", type=int, default=1, help="batch size")
     parser.add_argument("--save_topk", type=int, default=3, help="save top K models")
-    parser.add_argument("--image_size", type=int, default=1024, help="image size")
+    parser.add_argument("--image_size", type=int, default=720, help="image size")
     parser.add_argument("--steps", type=int, default=500000, help="number of steps")
     parser.add_argument("--num_points", type=int, default=3, help="number of random points")
-    parser.add_argument("--length", type=int, default=50, help="the length of the chosen masks")
+    parser.add_argument("--length", type=int, default=200, help="the length of the chosen masks")
 
-    parser.add_argument("--learning_rate", type=float, default=5.0e-6, help="learning rate")
+    parser.add_argument("--learning_rate", type=float, default=2.0e-5, help="learning rate")
     parser.add_argument("--weight_decay", type=float, default=1e-2, help="weight decay")
     parser.add_argument("--metrics_interval", type=int, default=500, help="interval for logging metrics")
 

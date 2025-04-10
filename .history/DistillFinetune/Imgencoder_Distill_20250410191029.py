@@ -209,7 +209,7 @@ class Imgencoder_Distill(AbstractDistillFinetuner):
                     
                     ext_name = coco_image_name.split('.')[-1]
                     step = self.current_epoch
-                    training_visual_path = f"/data2/wuxinrui/RA-L/MobileSAM/training_visual_distill/{step}"
+                    training_visual_path = f"/data2/wuxinrui/RA-L/MobileSAM/training_visual/{step}"
                     if not os.path.exists(training_visual_path):
                         os.makedirs(training_visual_path, exist_ok=True)
                     #G 1% to save images
@@ -278,16 +278,13 @@ class Imgencoder_Distill(AbstractDistillFinetuner):
                     tn.append(batch_tn)
 
                     accurare_masks += (batch_tp + batch_tn).sum().item() / (batch_tp + batch_fp + batch_fn + batch_tn).sum().item()
-
-
-            accuracy = accurare_masks / num_masks
-            av_BS_IoU = np.mean(BS_IoU)
-            av_BS_pa = np.mean(BS_pa)
-            del BS_IoU, BS_pa
+                accuracy = accurare_masks / num_masks
                 
-            penalty_coefficient = 0.5 * (1 + single_IoU) if single_IoU > 0.5 else 3 * (1 - single_IoU)
+                av_BS_IoU = np.mean(BS_IoU)
+                av_BS_pa = np.mean(BS_pa)
+                del BS_IoU, BS_pa
             return {
-                'loss': (5 * loss_focal + loss_dice + loss_iou + self.distill_weight * distill_loss) / penalty_coefficient,  # SAM default loss
+                'loss': 5 * loss_focal + loss_dice + loss_iou + self.distill_weight * distill_loss,  # SAM default loss
                 'loss_focal': loss_focal,
                 'loss_dice': loss_dice,
                 'loss_iou': loss_iou,
@@ -299,6 +296,7 @@ class Imgencoder_Distill(AbstractDistillFinetuner):
                 'fp': torch.cat(fp),
                 'fn': torch.cat(fn),
                 'tn': torch.cat(tn),
+
             }
 
         except Exception as e:

@@ -209,7 +209,7 @@ class Imgencoder_Distill(AbstractDistillFinetuner):
                     
                     ext_name = coco_image_name.split('.')[-1]
                     step = self.current_epoch
-                    training_visual_path = f"/data2/wuxinrui/RA-L/MobileSAM/training_visual_distill/{step}"
+                    training_visual_path = f"/data2/wuxinrui/RA-L/MobileSAM/training_visual/{step}"
                     if not os.path.exists(training_visual_path):
                         os.makedirs(training_visual_path, exist_ok=True)
                     #G 1% to save images

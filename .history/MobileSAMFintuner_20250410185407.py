@@ -234,7 +234,7 @@ class MobileSAMFintuner(pl.LightningModule):
                 
                 ext_name = coco_image_name.split('.')[-1]
                 step = self.current_epoch
-                training_visual_path = f"/data2/wuxinrui/RA-L/MobileSAM/training_visual_sft/{step}"
+                training_visual_path = f"/data2/wuxinrui/RA-L/MobileSAM/training_visual/{step}"
                 if not os.path.exists(training_visual_path):
                     os.makedirs(training_visual_path, exist_ok=True)
                 #G 1% to save images
@@ -290,7 +290,7 @@ class MobileSAMFintuner(pl.LightningModule):
                 label = F.interpolate(label.float(), scale_factor=0.5, mode="nearest")
                 masks = masks.squeeze(1).flatten(1)
                 label = label.flatten(1)
-
+                
                 loss_focal += sigmoid_focal_loss(masks, label.float(), num_masks, alpha=0.6, gamma=2.5)
                 #G more information on https://kimi.moonshot.cn/chat/cvf7v67f2enav567m6h0
 
