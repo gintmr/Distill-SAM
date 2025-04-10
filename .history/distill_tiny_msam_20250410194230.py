@@ -66,6 +66,8 @@ def main():
     parser.add_argument("--S_model", default='tiny_msam', type=str, required=False, help="model type")
     parser.add_argument("--checkpoint_path", default="/data2/wuxinrui/RA-L/MobileSAM/weights/mobile_sam.pt", type=str, required=False, help="path to the checkpoint")
 
+
+
     # 添加一个名为multimask的参数，类型为布尔型，默认值为False，当该参数被指定时，其值为True，用于生成多掩码
     parser.add_argument("--multimask", action="store_true", help="generate multi masks")
     # 添加一个名为use_bbox的参数，类型为布尔型，默认值为False，当该参数被指定时，其值为True，用于生成多掩码

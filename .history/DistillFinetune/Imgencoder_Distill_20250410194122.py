@@ -92,7 +92,7 @@ class Imgencoder_Distill(AbstractDistillFinetuner):
             multimask=False,
             use_bbox=False,
             max_steps=10000,
-            distill_weight=0.333  # 新增参数：蒸馏权重
+            distill_weight=0.75  # 新增参数：蒸馏权重
     ):
         super(Imgencoder_Distill, self).__init__(
             T_model=T_model,
