@@ -1,0 +1,90 @@
+2025-03-19 17:31:02 - INFO - args: Namespace(model_type='vit_t', checkpoint_path='./weights/mobile_sam.pt', test_img_path='/data2/wuxinrui/Projects/ICCV/MIMC_FINAL/seen/test_list', label_path='/data2/wuxinrui/Projects/ICCV/jsons_for_salient_instance_segmentation/test_1_prompts.json', output_dir='/data2/wuxinrui/Projects/ICCV/evaluate_fm/datasets/outputs', image_size=1024)
+2025-03-19 17:52:46 - INFO - bbox_avg_iou: 0.888705482788534
+2025-03-19 17:52:46 - INFO - bbox_avg_pa: 0.989189436502789
+2025-03-19 17:52:46 - INFO - point_avg_iou: 0.7208057742106998
+2025-03-19 17:52:46 - INFO - point_avg_pa: 0.9614983084246568
+2025-03-19 17:52:48 - INFO - Using device: cuda
+2025-03-19 17:52:48 - INFO - Devices num is 4
+2025-03-23 00:26:20 - INFO - args: Namespace(model_type='vit_t', checkpoint_path='/data2/wuxinrui/RA-L/MobileSAM/weights/mobile_sam.pt', test_img_path='/data2/wuxinrui/Projects/ICCV/MIMC_FINAL/seen/test_list', label_path='/data2/wuxinrui/Projects/ICCV/jsons_for_salient_instance_segmentation/test_5_prompts.json', output_dir='/data2/wuxinrui/RA-L/MobileSAM/eval_results', image_size=1024, visualize_mask_path='/data2/wuxinrui/RA-L/MobileSAM/modified_mobilesam_results')
+2025-03-23 00:40:57 - INFO - bbox_avg_iou: 0.6873783916922664
+2025-03-23 00:40:57 - INFO - bbox_avg_pa: 0.9851194223970853
+2025-03-23 00:40:57 - INFO - point_avg_iou: 0.6845369142593037
+2025-03-23 00:40:57 - INFO - point_avg_pa: 0.9815297897689202
+2025-03-24 13:51:53 - INFO - Using device: cuda
+2025-03-24 13:51:53 - INFO - Devices num is 4
+2025-03-24 13:51:53 - INFO - args: Namespace(model_type='vit_t', checkpoint_path='/data2/wuxinrui/RA-L/MobileSAM/weights/mobile_sam.pt', test_img_path='/data2/wuxinrui/Projects/ICCV/MIMC_FINAL/seen/test_list', label_path='/data2/wuxinrui/Projects/ICCV/jsons_for_salient_instance_segmentation/test_5_prompts.json', output_dir='/data2/wuxinrui/RA-L/MobileSAM/eval_results', image_size=1024, visualize_mask_path='/data2/wuxinrui/RA-L/MobileSAM/modified_mobilesam_results')
+2025-03-24 14:05:44 - INFO - bbox_avg_iou: 0.8887019623859413
+2025-03-24 14:05:44 - INFO - bbox_avg_pa: 0.9891894914133945
+2025-03-24 14:05:44 - INFO - point_avg_iou: 0.8361348210955735
+2025-03-24 14:05:44 - INFO - point_avg_pa: 0.9851523858261256
+2025-03-24 14:09:45 - INFO - Using device: cuda
+2025-03-24 14:09:45 - INFO - Devices num is 4
+2025-04-04 21:11:50 - INFO - args: Namespace(model_type='vit_t', checkpoint_path='/data2/wuxinrui/RA-L/MobileSAM/trained_models/standard_mimc/last-v6.ckpt', test_img_path='/data2/wuxinrui/Projects/ICCV/MIMC_FINAL/seen/test_list', label_path='/data2/wuxinrui/Projects/ICCV/jsons_for_salient_instance_segmentation/test_5_prompts.json', image_size=1024, visualize_mask_path='/data2/wuxinrui/RA-L/MobileSAM/modified_mobilesam_results')
+2025-04-04 21:12:06 - INFO - bbox_avg_iou: 0.8405564755428435
+2025-04-04 21:12:06 - INFO - bbox_avg_pa: 0.9885254605149887
+2025-04-04 21:12:06 - INFO - point_avg_iou: 0.7116424083254171
+2025-04-04 21:12:06 - INFO - point_avg_pa: 0.9668166192883738
+2025-04-04 21:12:46 - INFO - Using device: cuda
+2025-04-04 21:12:46 - INFO - Devices num is 4
+bbox_avg_iou: 0.8305968332306584
+bbox_avg_pa: 0.9901369174409985
+point_avg_iou: 0.71815143391387
+point_avg_pa: 0.9804744281355751
+2025-04-04 21:12:46 - INFO - args: Namespace(model_type='vit_t', checkpoint_path='/data2/wuxinrui/RA-L/MobileSAM/trained_models/standard_mimc/last-v6.ckpt', test_img_path='/data2/wuxinrui/Projects/ICCV/MIMC_FINAL/seen/test_list', label_path='/data2/wuxinrui/Projects/ICCV/jsons_for_salient_instance_segmentation/test_5_prompts.json', image_size=1024, visualize_mask_path='/data2/wuxinrui/RA-L/MobileSAM/modified_mobilesam_results')
+2025-04-05 00:02:45 - INFO - Using device: cuda
+2025-04-05 00:02:45 - INFO - Devices num is 4
+2025-04-05 00:02:45 - INFO - args: Namespace(model_type='vit_t', checkpoint_path='/data2/wuxinrui/RA-L/MobileSAM/trained_models/standard_mimc/last-v6.ckpt', test_img_path='/data2/wuxinrui/Projects/ICCV/MIMC_FINAL/seen/test_list', label_path='/data2/wuxinrui/Projects/ICCV/jsons_for_salient_instance_segmentation/test_5_prompts.json', image_size=1024, visualize_mask_path='/data2/wuxinrui/RA-L/MobileSAM/modified_mobilesam_results')
+2025-04-05 00:03:27 - INFO - Using device: cuda
+2025-04-05 00:03:27 - INFO - Devices num is 4
+2025-04-05 00:03:27 - INFO - args: Namespace(model_type='vit_t', checkpoint_path='/data2/wuxinrui/RA-L/MobileSAM/trained_models/standard_mimc/last-v6.ckpt', test_img_path='/data2/wuxinrui/Projects/ICCV/MIMC_FINAL/seen/test_list', label_path='/data2/wuxinrui/Projects/ICCV/jsons_for_salient_instance_segmentation/test_5_prompts.json', image_size=1024, visualize_mask_path='/data2/wuxinrui/RA-L/MobileSAM/modified_mobilesam_results')
+2025-04-05 00:03:42 - INFO - bbox_avg_iou: 0.8406248902594916
+2025-04-05 00:03:42 - INFO - bbox_avg_pa: 0.9887408209545192
+2025-04-05 00:03:42 - INFO - point_avg_iou: 0.7050360224235432
+2025-04-05 00:03:42 - INFO - point_avg_pa: 0.9660847176859526
+2025-04-05 00:04:01 - INFO - Using device: cuda
+2025-04-05 00:04:01 - INFO - Devices num is 4
+2025-04-05 00:04:01 - INFO - args: Namespace(model_type='vit_t', checkpoint_path='/data2/wuxinrui/RA-L/MobileSAM/trained_models/standard_mimc/final_model.pth', test_img_path='/data2/wuxinrui/Projects/ICCV/MIMC_FINAL/seen/test_list', label_path='/data2/wuxinrui/Projects/ICCV/jsons_for_salient_instance_segmentation/test_5_prompts.json', image_size=1024, visualize_mask_path='/data2/wuxinrui/RA-L/MobileSAM/modified_mobilesam_results')
+2025-04-05 00:04:54 - INFO - Using device: cuda
+2025-04-05 00:04:54 - INFO - Devices num is 4
+2025-04-05 00:04:54 - INFO - args: Namespace(model_type='vit_t', checkpoint_path='/data2/wuxinrui/RA-L/MobileSAM/weights/mobile_sam.pt', test_img_path='/data2/wuxinrui/Projects/ICCV/MIMC_FINAL/seen/test_list', label_path='/data2/wuxinrui/Projects/ICCV/jsons_for_salient_instance_segmentation/test_5_prompts.json', image_size=1024, visualize_mask_path='/data2/wuxinrui/RA-L/MobileSAM/modified_mobilesam_results')
+2025-04-05 00:05:09 - INFO - bbox_avg_iou: 0.7301976018677011
+2025-04-05 00:05:09 - INFO - bbox_avg_pa: 0.9833315696787284
+2025-04-05 00:05:09 - INFO - point_avg_iou: 0.7235321438634174
+2025-04-05 00:05:09 - INFO - point_avg_pa: 0.9752666042461775
+2025-04-05 00:32:37 - INFO - Using device: cuda
+2025-04-05 00:32:37 - INFO - Devices num is 4
+2025-04-05 00:32:37 - INFO - args: Namespace(model_type='vit_t', checkpoint_path='/data2/wuxinrui/RA-L/MobileSAM/weights/sam_vit_h_4b8939.pth', test_img_path='/data2/wuxinrui/Projects/ICCV/MIMC_FINAL/seen/test_list', label_path='/data2/wuxinrui/Projects/ICCV/jsons_for_salient_instance_segmentation/test_5_prompts.json', image_size=1024, visualize_mask_path='/data2/wuxinrui/RA-L/MobileSAM/modified_mobilesam_results')
+2025-04-05 00:33:15 - INFO - Using device: cuda
+2025-04-05 00:33:15 - INFO - Devices num is 4
+2025-04-05 00:33:15 - INFO - args: Namespace(model_type='vit_t', checkpoint_path='/data2/wuxinrui/RA-L/MobileSAM/weights/sam_vit_h_4b8939.pth', test_img_path='/data2/wuxinrui/Projects/ICCV/MIMC_FINAL/seen/test_list', label_path='/data2/wuxinrui/Projects/ICCV/jsons_for_salient_instance_segmentation/test_5_prompts.json', image_size=1024, visualize_mask_path='/data2/wuxinrui/RA-L/MobileSAM/modified_mobilesam_results')
+2025-04-05 00:34:41 - INFO - Using device: cuda
+2025-04-05 00:34:41 - INFO - Devices num is 4
+2025-04-05 00:34:41 - INFO - args: Namespace(model_type='vit_h', checkpoint_path='/data2/wuxinrui/RA-L/MobileSAM/weights/sam_vit_h_4b8939.pth', test_img_path='/data2/wuxinrui/Projects/ICCV/MIMC_FINAL/seen/test_list', label_path='/data2/wuxinrui/Projects/ICCV/jsons_for_salient_instance_segmentation/test_5_prompts.json', image_size=1024, visualize_mask_path='/data2/wuxinrui/RA-L/MobileSAM/modified_mobilesam_results')
+2025-04-05 00:36:00 - INFO - bbox_avg_iou: 0.7250065563370728
+2025-04-05 00:36:00 - INFO - bbox_avg_pa: 0.9804574099412239
+2025-04-05 00:36:00 - INFO - point_avg_iou: 0.7577828854546275
+2025-04-05 00:36:00 - INFO - point_avg_pa: 0.9803755610377616
+2025-04-05 17:26:15 - INFO - Using device: cuda
+2025-04-05 17:26:15 - INFO - Devices num is 4
+2025-04-05 17:26:15 - INFO - args: Namespace(model_type='vit_t', checkpoint_path='/data2/wuxinrui/RA-L/MobileSAM/trained_models/wxr_modified_mobilesam/last-v5.ckpt', test_img_path='/data2/wuxinrui/Projects/ICCV/MIMC_FINAL/seen/test_list', label_path='/data2/wuxinrui/Projects/ICCV/jsons_for_salient_instance_segmentation/test_5_prompts.json', image_size=1024, visualize_mask_path='/data2/wuxinrui/RA-L/MobileSAM/modified_mobilesam_results')
+2025-04-05 17:27:02 - INFO - Using device: cuda
+2025-04-05 17:27:02 - INFO - Devices num is 4
+2025-04-05 17:27:02 - INFO - args: Namespace(model_type='vit_t', checkpoint_path='/data2/wuxinrui/RA-L/MobileSAM/trained_models/wxr_modified_mobilesam/last-v5.ckpt', test_img_path='/data2/wuxinrui/Projects/ICCV/MIMC_FINAL/seen/test_list', label_path='/data2/wuxinrui/Projects/ICCV/jsons_for_salient_instance_segmentation/test_5_prompts.json', image_size=1024, visualize_mask_path='/data2/wuxinrui/RA-L/MobileSAM/modified_mobilesam_results')
+2025-04-05 17:27:16 - INFO - bbox_avg_iou: 0.827842963653177
+2025-04-05 17:27:16 - INFO - bbox_avg_pa: 0.9893583256610732
+2025-04-05 17:27:16 - INFO - point_avg_iou: 0.8130714752130886
+2025-04-05 17:27:16 - INFO - point_avg_pa: 0.988705734162151
+2025-04-06 01:16:56 - INFO - Using device: cuda
+2025-04-06 01:16:56 - INFO - Devices num is 4
+2025-04-06 01:16:56 - INFO - args: Namespace(model_type='vit_t', checkpoint_path='/data2/wuxinrui/RA-L/MobileSAM/trained_models/wxr_modified_mobilesam/last-v6.ckpt', test_img_path='/data2/wuxinrui/Projects/ICCV/MIMC_FINAL/seen/test_list', label_path='/data2/wuxinrui/Projects/ICCV/jsons_for_salient_instance_segmentation/test_5_prompts.json', image_size=1024, visualize_mask_path='/data2/wuxinrui/RA-L/MobileSAM/modified_mobilesam_results')
+2025-04-06 01:17:10 - INFO - bbox_avg_iou: 0.7188198098805452
+2025-04-06 01:17:10 - INFO - bbox_avg_pa: 0.9814734870156834
+2025-04-06 01:17:10 - INFO - point_avg_iou: 0.7973852137504147
+2025-04-06 01:17:10 - INFO - point_avg_pa: 0.9849216806500057
+2025-04-06 01:17:51 - INFO - Using device: cuda
+2025-04-06 01:17:51 - INFO - Devices num is 4
+2025-04-06 01:17:51 - INFO - args: Namespace(model_type='vit_t', checkpoint_path='/data2/wuxinrui/RA-L/MobileSAM/trained_models/wxr_modified_mobilesam/last-v5.ckpt', test_img_path='/data2/wuxinrui/Projects/ICCV/MIMC_FINAL/seen/test_list', label_path='/data2/wuxinrui/Projects/ICCV/jsons_for_salient_instance_segmentation/test_5_prompts.json', image_size=1024, visualize_mask_path='/data2/wuxinrui/RA-L/MobileSAM/modified_mobilesam_results')
+2025-04-06 01:18:06 - INFO - bbox_avg_iou: 0.827842963653177
+2025-04-06 01:18:06 - INFO - bbox_avg_pa: 0.9893583256610732
+2025-04-06 01:18:06 - INFO - point_avg_iou: 0.8130714752130886
+2025-04-06 01:18:06 - INFO - point_avg_pa: 0.988705734162151

@@ -1,0 +1,125 @@
+模块参数量和内存占用：
+模块 image_encoder:
+  参数量: 5,429,671
+  内存占用: 20.71 MB
+模块 prompt_encoder:
+  参数量: 6,476
+  内存占用: 0.02 MB
+模块 mask_decoder:
+  参数量: 4,058,340
+  内存占用: 15.48 MB
+模块 image_encoder.patch_embed:
+  参数量: 19,682
+  内存占用: 0.08 MB
+模块 image_encoder.layers:
+  参数量: 4,415,581
+  内存占用: 16.84 MB
+模块 image_encoder.norm_head:
+  参数量: 640
+  内存占用: 0.00 MB
+模块 image_encoder.head:
+  参数量: 321,000
+  内存占用: 1.22 MB
+模块 image_encoder.neck:
+  参数量: 672,768
+  内存占用: 2.57 MB
+模块 prompt_encoder.pe_layer:
+  参数量: 256
+  内存占用: 0.00 MB
+模块 prompt_encoder.point_embeddings:
+  参数量: 1,024
+  内存占用: 0.00 MB
+模块 prompt_encoder.not_a_point_embed:
+  参数量: 256
+  内存占用: 0.00 MB
+模块 prompt_encoder.mask_downscaling:
+  参数量: 4,684
+  内存占用: 0.02 MB
+模块 prompt_encoder.no_mask_embed:
+  参数量: 256
+  内存占用: 0.00 MB
+模块 mask_decoder.transformer:
+  参数量: 3,291,264
+  内存占用: 12.56 MB
+模块 mask_decoder.iou_token:
+  参数量: 256
+  内存占用: 0.00 MB
+模块 mask_decoder.mask_tokens:
+  参数量: 1,024
+  内存占用: 0.00 MB
+模块 mask_decoder.output_upscaling:
+  参数量: 73,952
+  内存占用: 0.28 MB
+模块 mask_decoder.output_hypernetworks_mlps:
+  参数量: 559,232
+  内存占用: 2.13 MB
+模块 mask_decoder.iou_prediction_head:
+  参数量: 132,612
+  内存占用: 0.51 MB
+
+总参数量和内存占用：
+总参数量: 9,494,487.0
+总内存占用: 36.22 MB
+
+模块参数量和内存占用：
+模块 image_encoder:
+  参数量: 6,075,415
+  内存占用: 23.18 MB
+模块 prompt_encoder:
+  参数量: 6,476
+  内存占用: 0.02 MB
+模块 mask_decoder:
+  参数量: 4,058,340
+  内存占用: 15.48 MB
+模块 image_encoder.patch_embed:
+  参数量: 19,682
+  内存占用: 0.08 MB
+模块 image_encoder.layers:
+  参数量: 5,061,325
+  内存占用: 19.31 MB
+模块 image_encoder.norm_head:
+  参数量: 640
+  内存占用: 0.00 MB
+模块 image_encoder.head:
+  参数量: 321,000
+  内存占用: 1.22 MB
+模块 image_encoder.neck:
+  参数量: 672,768
+  内存占用: 2.57 MB
+模块 prompt_encoder.pe_layer:
+  参数量: 256
+  内存占用: 0.00 MB
+模块 prompt_encoder.point_embeddings:
+  参数量: 1,024
+  内存占用: 0.00 MB
+模块 prompt_encoder.not_a_point_embed:
+  参数量: 256
+  内存占用: 0.00 MB
+模块 prompt_encoder.mask_downscaling:
+  参数量: 4,684
+  内存占用: 0.02 MB
+模块 prompt_encoder.no_mask_embed:
+  参数量: 256
+  内存占用: 0.00 MB
+模块 mask_decoder.transformer:
+  参数量: 3,291,264
+  内存占用: 12.56 MB
+模块 mask_decoder.iou_token:
+  参数量: 256
+  内存占用: 0.00 MB
+模块 mask_decoder.mask_tokens:
+  参数量: 1,024
+  内存占用: 0.00 MB
+模块 mask_decoder.output_upscaling:
+  参数量: 73,952
+  内存占用: 0.28 MB
+模块 mask_decoder.output_hypernetworks_mlps:
+  参数量: 559,232
+  内存占用: 2.13 MB
+模块 mask_decoder.iou_prediction_head:
+  参数量: 132,612
+  内存占用: 0.51 MB
+
+总参数量和内存占用：
+总参数量: 10,140,231.0
+总内存占用: 38.68 MB

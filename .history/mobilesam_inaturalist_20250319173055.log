@@ -1,0 +1,40 @@
+2025-03-13 23:14:40 - INFO - Average IoU: 0.3454977112280012
+2025-03-13 23:14:40 - INFO - Average PA: 0.943333289597997
+2025-03-13 23:17:31 - INFO - Using device: cuda
+2025-03-13 23:17:31 - INFO - Devices num is 4
+2025-03-13 23:22:37 - INFO - Average IoU: nan
+2025-03-13 23:22:37 - INFO - Average PA: nan
+2025-03-13 23:24:00 - INFO - Using device: cuda
+2025-03-13 23:24:00 - INFO - Devices num is 4
+2025-03-13 23:26:44 - INFO - Using device: cuda
+2025-03-13 23:26:44 - INFO - Devices num is 4
+2025-03-13 23:28:09 - INFO - Using device: cuda
+2025-03-13 23:28:09 - INFO - Devices num is 4
+2025-03-13 23:28:18 - INFO - Average IoU: nan
+2025-03-13 23:28:18 - INFO - Average PA: nan
+2025-03-13 23:32:44 - INFO - Using device: cuda
+2025-03-13 23:32:44 - INFO - Devices num is 4
+2025-03-13 23:33:27 - INFO - Using device: cuda
+2025-03-13 23:33:27 - INFO - Devices num is 4
+2025-03-13 23:33:35 - INFO - Average IoU: nan
+2025-03-13 23:33:35 - INFO - Average PA: nan
+2025-03-13 23:34:28 - INFO - Using device: cuda
+2025-03-13 23:34:28 - INFO - Devices num is 4
+2025-03-13 23:36:36 - INFO - Using device: cuda
+2025-03-13 23:36:36 - INFO - Devices num is 4
+2025-03-13 23:36:46 - INFO - Average IoU: 0.043637862775556785
+2025-03-13 23:36:46 - INFO - Average PA: 0.9781952858985834
+2025-03-13 23:42:55 - INFO - Using device: cuda
+2025-03-13 23:42:55 - INFO - Devices num is 4
+2025-03-13 23:43:26 - INFO - Using device: cuda
+2025-03-13 23:43:26 - INFO - Devices num is 4
+2025-03-13 23:50:11 - INFO - Average IoU: 0.10519539551381246
+2025-03-13 23:50:11 - INFO - Average PA: 0.9424899240869274
+2025-03-14 00:26:11 - INFO - Using device: cuda
+2025-03-14 00:26:11 - INFO - Devices num is 4
+2025-03-14 00:33:06 - INFO - Average IoU: 0.4291031448630698
+2025-03-14 00:33:06 - INFO - Average PA: 0.9666559314856262
+2025-03-14 00:33:48 - INFO - Using device: cuda
+2025-03-14 00:33:48 - INFO - Devices num is 4
+2025-03-14 00:40:49 - INFO - Average IoU: 0.4291031448630698
+2025-03-14 00:40:49 - INFO - Average PA: 0.9666559314856262

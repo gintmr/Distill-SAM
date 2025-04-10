@@ -1,0 +1,2 @@
+mobile_sam
+segment_anything

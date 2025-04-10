@@ -1,0 +1,3 @@
+lr-AdamW,step,loss,loss_focal,loss_dice,loss_classification,acc,loss_iou,train_per_mask_iou,epoch
+1e-05,49,,,,,,,,
+,49,5.38083028793335,0.2098759263753891,0.9571689367294312,0.0,0.0,0.2261430025100708,0.15580707788467407,3

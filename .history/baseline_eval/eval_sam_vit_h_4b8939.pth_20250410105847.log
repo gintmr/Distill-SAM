@@ -1,0 +1,26 @@
+2025-04-06 22:57:05 - INFO - Using device: cuda
+2025-04-06 22:57:05 - INFO - Devices num is 1
+2025-04-06 22:57:05 - INFO - args: Namespace(model_type='vit_h', checkpoint_path='/data2/wuxinrui/RA-L/MobileSAM/weights/sam_vit_h_4b8939.pth', test_img_path='/data2/wuxinrui/Projects/ICCV/MIMC_FINAL/seen/test_list', label_path='/data2/wuxinrui/Projects/ICCV/jsons_for_salient_instance_segmentation/test_1_prompts.json', label_num=1, image_size=1024, visualize_mask_path='/data2/wuxinrui/RA-L/MobileSAM/baseline_eval/ori_SAM', ori_SAM='True')
+2025-04-06 22:57:36 - INFO - INFERENCE_MODE = train
+2025-04-06 22:57:36 - INFO - label_path = /data2/wuxinrui/Projects/ICCV/jsons_for_salient_instance_segmentation/test_1_prompts.json
+2025-04-07 00:01:51 - INFO - bbox_PA: 0.9879599665763482
+2025-04-07 00:01:51 - INFO - bbox_IoU: 0.6964316270706624
+2025-04-07 00:01:51 - INFO - bbox_Dice: 0.7773400384267132
+2025-04-07 00:01:51 - INFO - bbox_Precision: 0.8788217006470773
+2025-04-07 00:01:51 - INFO - bbox_Recall: 0.7278770488077779
+2025-04-07 00:01:51 - INFO - bbox_F1 Score: 0.7773400384267132
+2025-04-07 00:01:51 - INFO - bbox_MAE: 0.01204003393650055
+2025-04-07 00:01:51 - INFO - bbox_MSE: 0.01204003393650055
+2025-04-07 00:01:51 - INFO - point_PA: 0.9671318171663233
+2025-04-07 00:01:51 - INFO - point_IoU: 0.550000487931767
+2025-04-07 00:01:51 - INFO - point_Dice: 0.6391187207657931
+2025-04-07 00:01:51 - INFO - point_Precision: 0.8536694075360731
+2025-04-07 00:01:51 - INFO - point_Recall: 0.5839497373005252
+2025-04-07 00:01:51 - INFO - point_F1 Score: 0.6391187207657931
+2025-04-07 00:01:51 - INFO - point_MAE: 0.03286818042397499
+2025-04-07 00:01:51 - INFO - point_MSE: 0.03286818042397499
+2025-04-07 00:01:57 - INFO - Using device: cuda
+2025-04-07 00:01:57 - INFO - Devices num is 1
+2025-04-07 00:01:57 - INFO - args: Namespace(model_type='vit_h', checkpoint_path='/data2/wuxinrui/RA-L/MobileSAM/weights/sam_vit_h_4b8939.pth', test_img_path='/data2/wuxinrui/Projects/ICCV/MIMC_FINAL/seen/test_list', label_path='/data2/wuxinrui/Projects/ICCV/jsons_for_salient_instance_segmentation/test_1_prompts.json', label_num=3, image_size=1024, visualize_mask_path='/data2/wuxinrui/RA-L/MobileSAM/baseline_eval/ori_SAM', ori_SAM='True')
+2025-04-07 00:02:32 - INFO - INFERENCE_MODE = train
+2025-04-07 00:02:32 - INFO - label_path = /data2/wuxinrui/Projects/ICCV/jsons_for_salient_instance_segmentation/test_3_prompts.json

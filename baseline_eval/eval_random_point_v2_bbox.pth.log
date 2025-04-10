@@ -1,0 +1,115 @@
+#### 下采样1/2 ####
+
+2025-04-10 11:02:34 - INFO - Using device: cuda
+2025-04-10 11:02:34 - INFO - Devices num is 1
+2025-04-10 11:02:34 - INFO - args: Namespace(model_type='vit_t', checkpoint_path='/data2/wuxinrui/RA-L/MobileSAM/trained_models/wxr_modified_mobilesam/random_point_v2_bbox.pth', test_img_path='/data2/wuxinrui/Projects/ICCV/MIMC_FINAL/seen/test_list', label_path='/data2/wuxinrui/Projects/ICCV/jsons_for_salient_instance_segmentation/test_1_prompts.json', label_num=3, image_size=1024, visualize_mask_path='/data2/wuxinrui/RA-L/MobileSAM/baseline_eval/temp', ori_SAM=False)
+2025-04-10 11:02:50 - INFO - ##################################################INFERENCE_MODE = train##################################################
+2025-04-10 11:02:50 - INFO - ##################################################label_path = /data2/wuxinrui/Projects/ICCV/jsons_for_salient_instance_segmentation/test_3_prompts.json##################################################
+2025-04-10 11:20:59 - INFO - bbox_PA: 0.9901928816200892
+2025-04-10 11:20:59 - INFO - bbox_IoU: 0.8240107565337664
+2025-04-10 11:20:59 - INFO - bbox_Dice: 0.8942635750101496
+2025-04-10 11:20:59 - INFO - bbox_Precision: 0.9003489874509839
+2025-04-10 11:20:59 - INFO - bbox_Recall: 0.8990112233720825
+2025-04-10 11:20:59 - INFO - bbox_F1 Score: 0.8942635750101496
+2025-04-10 11:20:59 - INFO - bbox_MAE: 0.009807118214666843
+2025-04-10 11:20:59 - INFO - bbox_MSE: 0.009807118214666843
+2025-04-10 11:20:59 - INFO - point_PA: 0.9818137936192683
+2025-04-10 11:20:59 - INFO - point_IoU: 0.7434995780702821
+2025-04-10 11:20:59 - INFO - point_Dice: 0.8315285250483303
+2025-04-10 11:20:59 - INFO - point_Precision: 0.8565778900940367
+2025-04-10 11:20:59 - INFO - point_Recall: 0.8518841825381788
+2025-04-10 11:20:59 - INFO - point_F1 Score: 0.8315285250483303
+2025-04-10 11:20:59 - INFO - point_MAE: 0.018186207860708237
+2025-04-10 11:20:59 - INFO - point_MSE: 0.018186207860708237
+2025-04-10 11:21:03 - INFO - Using device: cuda
+2025-04-10 11:21:03 - INFO - Devices num is 1
+2025-04-10 11:21:03 - INFO - args: Namespace(model_type='vit_t', checkpoint_path='/data2/wuxinrui/RA-L/MobileSAM/trained_models/wxr_modified_mobilesam/random_point_v2_bbox.pth', test_img_path='/data2/wuxinrui/Projects/ICCV/MIMC_FINAL/seen/test_list', label_path='/data2/wuxinrui/Projects/ICCV/jsons_for_salient_instance_segmentation/test_1_prompts.json', label_num=1, image_size=1024, visualize_mask_path='/data2/wuxinrui/RA-L/MobileSAM/baseline_eval/temp', ori_SAM=False)
+2025-04-10 11:21:07 - INFO - ##################################################INFERENCE_MODE = train##################################################
+2025-04-10 11:21:07 - INFO - ##################################################label_path = /data2/wuxinrui/Projects/ICCV/jsons_for_salient_instance_segmentation/test_1_prompts.json##################################################
+2025-04-10 11:38:30 - INFO - bbox_PA: 0.9903335015336843
+2025-04-10 11:38:30 - INFO - bbox_IoU: 0.8275392421740637
+2025-04-10 11:38:30 - INFO - bbox_Dice: 0.8967730138612434
+2025-04-10 11:38:30 - INFO - bbox_Precision: 0.8991023961835988
+2025-04-10 11:38:30 - INFO - bbox_Recall: 0.9051556819897231
+2025-04-10 11:38:30 - INFO - bbox_F1 Score: 0.8967730138612435
+2025-04-10 11:38:30 - INFO - bbox_MAE: 0.009666496887803078
+2025-04-10 11:38:30 - INFO - bbox_MSE: 0.009666496887803078
+2025-04-10 11:38:30 - INFO - point_PA: 0.9470692170717362
+2025-04-10 11:38:30 - INFO - point_IoU: 0.6419646827679711
+2025-04-10 11:38:30 - INFO - point_Dice: 0.7255391352788321
+2025-04-10 11:38:30 - INFO - point_Precision: 0.7275962259574946
+2025-04-10 11:38:30 - INFO - point_Recall: 0.8742086392490152
+2025-04-10 11:38:30 - INFO - point_F1 Score: 0.725539135278832
+2025-04-10 11:38:30 - INFO - point_MAE: 0.05293078348040581
+2025-04-10 11:38:30 - INFO - point_MSE: 0.05293078348040581
+2025-04-10 11:38:34 - INFO - Using device: cuda
+2025-04-10 11:38:34 - INFO - Devices num is 1
+2025-04-10 11:38:34 - INFO - args: Namespace(model_type='vit_t', checkpoint_path='/data2/wuxinrui/RA-L/MobileSAM/trained_models/wxr_modified_mobilesam/random_point_v2_bbox.pth', test_img_path='/data2/wuxinrui/Projects/ICCV/MIMC_FINAL/seen/test_list', label_path='/data2/wuxinrui/Projects/ICCV/jsons_for_salient_instance_segmentation/test_1_prompts.json', label_num=5, image_size=1024, visualize_mask_path='/data2/wuxinrui/RA-L/MobileSAM/baseline_eval/temp', ori_SAM=False)
+2025-04-10 11:38:38 - INFO - ##################################################INFERENCE_MODE = train##################################################
+2025-04-10 11:38:38 - INFO - ##################################################label_path = /data2/wuxinrui/Projects/ICCV/jsons_for_salient_instance_segmentation/test_5_prompts.json##################################################
+2025-04-10 11:55:26 - INFO - bbox_PA: 0.9901928816200892
+2025-04-10 11:55:26 - INFO - bbox_IoU: 0.8240107565337664
+2025-04-10 11:55:26 - INFO - bbox_Dice: 0.8942635750101496
+2025-04-10 11:55:26 - INFO - bbox_Precision: 0.9003489874509839
+2025-04-10 11:55:26 - INFO - bbox_Recall: 0.8990112233720825
+2025-04-10 11:55:26 - INFO - bbox_F1 Score: 0.8942635750101496
+2025-04-10 11:55:26 - INFO - bbox_MAE: 0.009807118214666843
+2025-04-10 11:55:26 - INFO - bbox_MSE: 0.009807118214666843
+2025-04-10 11:55:26 - INFO - point_PA: 0.9854424695561036
+2025-04-10 11:55:26 - INFO - point_IoU: 0.7676024478464059
+2025-04-10 11:55:26 - INFO - point_Dice: 0.8534476428143419
+2025-04-10 11:55:26 - INFO - point_Precision: 0.8832274464028147
+2025-04-10 11:55:26 - INFO - point_Recall: 0.8541332928477983
+2025-04-10 11:55:26 - INFO - point_F1 Score: 0.8534476428143419
+2025-04-10 11:55:26 - INFO - point_MAE: 0.014557530172169209
+2025-04-10 11:55:26 - INFO - point_MSE: 0.014557530172169209
+
+
+#### 正常推理 ####
+2025-04-10 12:36:36 - INFO - Using device: cuda
+2025-04-10 12:36:36 - INFO - Devices num is 1
+2025-04-10 12:36:36 - INFO - args: Namespace(model_type='vit_t', checkpoint_path='/data2/wuxinrui/RA-L/MobileSAM/trained_models/wxr_modified_mobilesam/random_point_v2_bbox.pth', test_img_path='/data2/wuxinrui/Projects/ICCV/MIMC_FINAL/seen/test_list', label_path='/data2/wuxinrui/Projects/ICCV/jsons_for_salient_instance_segmentation/test_1_prompts.json', label_num=3, image_size=1024, visualize_mask_path='/data2/wuxinrui/RA-L/MobileSAM/baseline_eval/temp', ori_SAM=False)
+2025-04-10 12:36:40 - INFO - ##################################################INFERENCE_MODE = test##################################################
+2025-04-10 12:36:40 - INFO - ##################################################label_path = /data2/wuxinrui/Projects/ICCV/jsons_for_salient_instance_segmentation/test_3_prompts.json##################################################
+2025-04-10 12:55:19 - INFO - bbox_PA: 0.9897420297942197
+2025-04-10 12:55:19 - INFO - bbox_IoU: 0.8279244104553276
+2025-04-10 12:55:19 - INFO - bbox_Dice: 0.8983947337513462
+2025-04-10 12:55:19 - INFO - bbox_Precision: 0.8810680288226241
+2025-04-10 12:55:19 - INFO - bbox_Recall: 0.9261904725096411
+2025-04-10 12:55:19 - INFO - bbox_F1 Score: 0.8983947337513462
+2025-04-10 12:55:19 - INFO - bbox_MAE: 0.010257970541715622
+2025-04-10 12:55:19 - INFO - bbox_MSE: 0.010257970541715622
+2025-04-10 12:55:19 - INFO - point_PA: 0.9812884289672318
+2025-04-10 12:55:19 - INFO - point_IoU: 0.7373793476961911
+2025-04-10 12:55:19 - INFO - point_Dice: 0.8274493395184542
+2025-04-10 12:55:19 - INFO - point_Precision: 0.8323334486757752
+2025-04-10 12:55:19 - INFO - point_Recall: 0.8700649493044408
+2025-04-10 12:55:19 - INFO - point_F1 Score: 0.8274493395184542
+2025-04-10 12:55:19 - INFO - point_MAE: 0.018711572512984276
+2025-04-10 12:55:19 - INFO - point_MSE: 0.018711572512984276
+2025-04-10 12:55:23 - INFO - Using device: cuda
+2025-04-10 12:55:23 - INFO - Devices num is 1
+2025-04-10 12:55:23 - INFO - args: Namespace(model_type='vit_t', checkpoint_path='/data2/wuxinrui/RA-L/MobileSAM/trained_models/wxr_modified_mobilesam/random_point_v2_bbox.pth', test_img_path='/data2/wuxinrui/Projects/ICCV/MIMC_FINAL/seen/test_list', label_path='/data2/wuxinrui/Projects/ICCV/jsons_for_salient_instance_segmentation/test_1_prompts.json', label_num=1, image_size=1024, visualize_mask_path='/data2/wuxinrui/RA-L/MobileSAM/baseline_eval/temp', ori_SAM=False)
+2025-04-10 12:55:27 - INFO - ##################################################INFERENCE_MODE = test##################################################
+2025-04-10 12:55:27 - INFO - ##################################################label_path = /data2/wuxinrui/Projects/ICCV/jsons_for_salient_instance_segmentation/test_1_prompts.json##################################################
+2025-04-10 13:12:27 - INFO - bbox_PA: 0.9897420297942197
+2025-04-10 13:12:27 - INFO - bbox_IoU: 0.8279244104553276
+2025-04-10 13:12:27 - INFO - bbox_Dice: 0.8983947337513462
+2025-04-10 13:12:27 - INFO - bbox_Precision: 0.8810680288226241
+2025-04-10 13:12:27 - INFO - bbox_Recall: 0.9261904725096411
+2025-04-10 13:12:27 - INFO - bbox_F1 Score: 0.8983947337513462
+2025-04-10 13:12:27 - INFO - bbox_MAE: 0.010257970541715622
+2025-04-10 13:12:27 - INFO - bbox_MSE: 0.010257970541715622
+2025-04-10 13:12:27 - INFO - point_PA: 0.9493181329869611
+2025-04-10 13:12:27 - INFO - point_IoU: 0.6344453151270297
+2025-04-10 13:12:27 - INFO - point_Dice: 0.7231723335042299
+2025-04-10 13:12:27 - INFO - point_Precision: 0.7104454390725893
+2025-04-10 13:12:27 - INFO - point_Recall: 0.8814934987757111
+2025-04-10 13:12:27 - INFO - point_F1 Score: 0.7231723335042299
+2025-04-10 13:12:27 - INFO - point_MAE: 0.05068186670541763
+2025-04-10 13:12:27 - INFO - point_MSE: 0.05068186670541763
+2025-04-10 13:12:31 - INFO - Using device: cuda
+2025-04-10 13:12:31 - INFO - Devices num is 1
+2025-04-10 13:12:31 - INFO - args: Namespace(model_type='vit_t', checkpoint_path='/data2/wuxinrui/RA-L/MobileSAM/trained_models/wxr_modified_mobilesam/random_point_v2_bbox.pth', test_img_path='/data2/wuxinrui/Projects/ICCV/MIMC_FINAL/seen/test_list', label_path='/data2/wuxinrui/Projects/ICCV/jsons_for_salient_instance_segmentation/test_1_prompts.json', label_num=5, image_size=1024, visualize_mask_path='/data2/wuxinrui/RA-L/MobileSAM/baseline_eval/temp', ori_SAM=False)
+2025-04-10 13:12:35 - INFO - ##################################################INFERENCE_MODE = test##################################################
+2025-04-10 13:12:35 - INFO - ##################################################label_path = /data2/wuxinrui/Projects/ICCV/jsons_for_salient_instance_segmentation/test_5_prompts.json##################################################

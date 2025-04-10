@@ -1,0 +1,15 @@
+*.pyc
+*.pyo
+*.pyd
+__py
+**/__pycache__/
+*.jpeg
+*.jpg
+*.png
+*.pth
+*.pt
+*.ckpt
+*.json
+*.jsonl
+/data2/wuxinrui/RA-L/MobileSAM/nohup.out
+/data2/wuxinrui/RA-L/MobileSAM/.history/*

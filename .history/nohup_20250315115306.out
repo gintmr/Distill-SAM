@@ -1,0 +1,67 @@
+03/15/2025 11:53:05 - WARNING - sahi.utils.coco -   Segmentation annotation for id 900400019109 is skipped since RLE segmentation format is not supported.
+03/15/2025 11:53:05 - WARNING - sahi.utils.coco -   Segmentation annotation for id 900300460147 is skipped since RLE segmentation format is not supported.
+03/15/2025 11:53:05 - WARNING - sahi.utils.coco -   Segmentation annotation for id 900200279278 is skipped since RLE segmentation format is not supported.
+03/15/2025 11:53:05 - WARNING - sahi.utils.coco -   Segmentation annotation for id 906000370677 is skipped since RLE segmentation format is not supported.
+Loading coco annotations:  13%|█▎        | 266/2000 [00:00<00:01, 1212.01it/s]03/15/2025 11:53:05 - WARNING - sahi.utils.coco -   Segmentation annotation for id 905200050149 is skipped since RLE segmentation format is not supported.
+03/15/2025 11:53:05 - WARNING - sahi.utils.coco -   Segmentation annotation for id 901500225670 is skipped since RLE segmentation format is not supported.
+03/15/2025 11:53:05 - WARNING - sahi.utils.coco -   Segmentation annotation for id 902000534394 is skipped since RLE segmentation format is not supported.
+03/15/2025 11:53:05 - WARNING - sahi.utils.coco -   Segmentation annotation for id 900100158548 is skipped since RLE segmentation format is not supported.
+03/15/2025 11:53:05 - WARNING - sahi.utils.coco -   Segmentation annotation for id 900100309391 is skipped since RLE segmentation format is not supported.
+03/15/2025 11:53:05 - WARNING - sahi.utils.coco -   Segmentation annotation for id 901000309391 is skipped since RLE segmentation format is not supported.
+03/15/2025 11:53:05 - WARNING - sahi.utils.coco -   Segmentation annotation for id 900100481390 is skipped since RLE segmentation format is not supported.
+03/15/2025 11:53:05 - WARNING - sahi.utils.coco -   Segmentation annotation for id 900100345027 is skipped since RLE segmentation format is not supported.
+03/15/2025 11:53:06 - WARNING - sahi.utils.coco -   Segmentation annotation for id 900100018380 is skipped since RLE segmentation format is not supported.
+03/15/2025 11:53:06 - WARNING - sahi.utils.coco -   Segmentation annotation for id 908400104666 is skipped since RLE segmentation format is not supported.
+03/15/2025 11:53:06 - WARNING - sahi.utils.coco -   Segmentation annotation for id 903800208423 is skipped since RLE segmentation format is not supported.
+Loading coco annotations:  19%|█▉        | 388/2000 [00:00<00:01, 1146.09it/s]03/15/2025 11:53:06 - WARNING - sahi.utils.coco -   Segmentation annotation for id 902100087470 is skipped since RLE segmentation format is not supported.
+03/15/2025 11:53:06 - WARNING - sahi.utils.coco -   Segmentation annotation for id 901600049761 is skipped since RLE segmentation format is not supported.
+03/15/2025 11:53:06 - WARNING - sahi.utils.coco -   Segmentation annotation for id 900300054967 is skipped since RLE segmentation format is not supported.
+03/15/2025 11:53:06 - WARNING - sahi.utils.coco -   Segmentation annotation for id 901600031322 is skipped since RLE segmentation format is not supported.
+03/15/2025 11:53:06 - WARNING - sahi.utils.coco -   Segmentation annotation for id 900100163057 is skipped since RLE segmentation format is not supported.
+03/15/2025 11:53:06 - WARNING - sahi.utils.coco -   Segmentation annotation for id 900100166747 is skipped since RLE segmentation format is not supported.
+03/15/2025 11:53:06 - WARNING - sahi.utils.coco -   Segmentation annotation for id 906200462904 is skipped since RLE segmentation format is not supported.
+03/15/2025 11:53:06 - WARNING - sahi.utils.coco -   Segmentation annotation for id 900100138639 is skipped since RLE segmentation format is not supported.
+03/15/2025 11:53:06 - WARNING - sahi.utils.coco -   Segmentation annotation for id 900100074092 is skipped since RLE segmentation format is not supported.
+03/15/2025 11:53:06 - WARNING - sahi.utils.coco -   Segmentation annotation for id 905200378515 is skipped since RLE segmentation format is not supported.
+Loading coco annotations:  25%|██▌       | 504/2000 [00:00<00:01, 1108.55it/s]03/15/2025 11:53:06 - WARNING - sahi.utils.coco -   Segmentation annotation for id 900100184324 is skipped since RLE segmentation format is not supported.
+03/15/2025 11:53:06 - WARNING - sahi.utils.coco -   Segmentation annotation for id 902800549930 is skipped since RLE segmentation format is not supported.
+03/15/2025 11:53:06 - WARNING - sahi.utils.coco -   Segmentation annotation for id 900300373353 is skipped since RLE segmentation format is not supported.
+03/15/2025 11:53:06 - WARNING - sahi.utils.coco -   Segmentation annotation for id 900100500478 is skipped since RLE segmentation format is not supported.
+03/15/2025 11:53:06 - WARNING - sahi.utils.coco -   Segmentation annotation for id 900100402615 is skipped since RLE segmentation format is not supported.
+03/15/2025 11:53:06 - WARNING - sahi.utils.coco -   Segmentation annotation for id 900100261097 is skipped since RLE segmentation format is not supported.
+03/15/2025 11:53:06 - WARNING - sahi.utils.coco -   Segmentation annotation for id 901500261097 is skipped since RLE segmentation format is not supported.
+Loading coco annotations:  31%|███▏      | 625/2000 [00:00<00:01, 1141.62it/s]03/15/2025 11:53:06 - WARNING - sahi.utils.coco -   Segmentation annotation for id 900100378673 is skipped since RLE segmentation format is not supported.
+03/15/2025 11:53:06 - WARNING - sahi.utils.coco -   Segmentation annotation for id 900100212800 is skipped since RLE segmentation format is not supported.
+03/15/2025 11:53:06 - WARNING - sahi.utils.coco -   Segmentation annotation for id 903200250282 is skipped since RLE segmentation format is not supported.
+03/15/2025 11:53:06 - WARNING - sahi.utils.coco -   Segmentation annotation for id 900100250282 is skipped since RLE segmentation format is not supported.
+03/15/2025 11:53:06 - WARNING - sahi.utils.coco -   Segmentation annotation for id 900100057760 is skipped since RLE segmentation format is not supported.
+03/15/2025 11:53:06 - WARNING - sahi.utils.coco -   Segmentation annotation for id 908400386912 is skipped since RLE segmentation format is not supported.
+03/15/2025 11:53:06 - WARNING - sahi.utils.coco -   Segmentation annotation for id 905600465585 is skipped since RLE segmentation format is not supported.
+Loading coco annotations:  37%|███▋      | 740/2000 [00:00<00:01, 1141.14it/s]03/15/2025 11:53:06 - WARNING - sahi.utils.coco -   Segmentation annotation for id 900100427997 is skipped since RLE segmentation format is not supported.
+03/15/2025 11:53:06 - WARNING - sahi.utils.coco -   Segmentation annotation for id 901600490125 is skipped since RLE segmentation format is not supported.
+03/15/2025 11:53:06 - WARNING - sahi.utils.coco -   Segmentation annotation for id 900100493905 is skipped since RLE segmentation format is not supported.
+03/15/2025 11:53:06 - WARNING - sahi.utils.coco -   Segmentation annotation for id 900100145020 is skipped since RLE segmentation format is not supported.
+03/15/2025 11:53:06 - WARNING - sahi.utils.coco -   Segmentation annotation for id 906200410650 is skipped since RLE segmentation format is not supported.
+03/15/2025 11:53:06 - WARNING - sahi.utils.coco -   Segmentation annotation for id 900100410650 is skipped since RLE segmentation format is not supported.
+03/15/2025 11:53:06 - WARNING - sahi.utils.coco -   Segmentation annotation for id 900100002299 is skipped since RLE segmentation format is not supported.
+03/15/2025 11:53:06 - WARNING - sahi.utils.coco -   Segmentation annotation for id 908400416534 is skipped since RLE segmentation format is not supported.
+Loading coco annotations:  44%|████▍     | 882/2000 [00:00<00:00, 1223.09it/s]03/15/2025 11:53:06 - WARNING - sahi.utils.coco -   Segmentation annotation for id 906200239857 is skipped since RLE segmentation format is not supported.
+03/15/2025 11:53:06 - WARNING - sahi.utils.coco -   Segmentation annotation for id 900100279927 is skipped since RLE segmentation format is not supported.
+03/15/2025 11:53:06 - WARNING - sahi.utils.coco -   Segmentation annotation for id 908400371699 is skipped since RLE segmentation format is not supported.
+03/15/2025 11:53:06 - WARNING - sahi.utils.coco -   Segmentation annotation for id 900100256192 is skipped since RLE segmentation format is not supported.
+03/15/2025 11:53:06 - WARNING - sahi.utils.coco -   Segmentation annotation for id 905100381587 is skipped since RLE segmentation format is not supported.
+03/15/2025 11:53:06 - WARNING - sahi.utils.coco -   Segmentation annotation for id 903300500257 is skipped since RLE segmentation format is not supported.
+03/15/2025 11:53:06 - WARNING - sahi.utils.coco -   Segmentation annotation for id 906000254016 is skipped since RLE segmentation format is not supported.
+03/15/2025 11:53:06 - WARNING - sahi.utils.coco -   Segmentation annotation for id 905200293794 is skipped since RLE segmentation format is not supported.
+03/15/2025 11:53:06 - WARNING - sahi.utils.coco -   Segmentation annotation for id 900100078565 is skipped since RLE segmentation format is not supported.
+03/15/2025 11:53:06 - WARNING - sahi.utils.coco -   Segmentation annotation for id 902000230166 is skipped since RLE segmentation format is not supported.
+03/15/2025 11:53:06 - WARNING - sahi.utils.coco -   Segmentation annotation for id 902200245915 is skipped since RLE segmentation format is not supported.
+Loading coco annotations:  50%|█████     | 1005/2000 [00:00<00:00, 1216.77it/s]03/15/2025 11:53:06 - WARNING - sahi.utils.coco -   Segmentation annotation for id 903800570756 is skipped since RLE segmentation format is not supported.
+03/15/2025 11:53:06 - WARNING - sahi.utils.coco -   Segmentation annotation for id 900100570756 is skipped since RLE segmentation format is not supported.
+03/15/2025 11:53:06 - WARNING - sahi.utils.coco -   Segmentation annotation for id 900100173057 is skipped since RLE segmentation format is not supported.
+03/15/2025 11:53:06 - WARNING - sahi.utils.coco -   Segmentation annotation for id 906000345469 is skipped since RLE segmentation format is not supported.
+03/15/2025 11:53:06 - WARNING - sahi.utils.coco -   Segmentation annotation for id 900100338304 is skipped since RLE segmentation format is not supported.
+03/15/2025 11:53:06 - WARNING - sahi.utils.coco -   Segmentation annotation for id 900100107851 is skipped since RLE segmentation format is not supported.
+03/15/2025 11:53:06 - WARNING - sahi.utils.coco -   Segmentation annotation for id 900900442822 is skipped since RLE segmentation format is not supported.
+03/15/2025 11:53:06 - WARNING - sahi.utils.coco -   Segmentation annotation for id 900100181542 is skipped since RLE segmentation format is not supported.
+03/15/2025 11:53:06 - WARNING - sahi.utils.coco -   Segmentation annotation for id 900100376900 is skipped since RLE segmentation format is not supported.

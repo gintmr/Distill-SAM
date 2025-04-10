@@ -1,0 +1,13 @@
+Dataset Quality Statistics:
+Mean Height: 483.07
+Mean Width: 578.42
+Std Dev Height: 96.69
+Std Dev Width: 91.12
+Min Height: 120
+Min Width: 120
+Max Height: 640
+Max Width: 640
+Mean S: 275869.23
+Std Dev S: 52064.08
+Min S: 14400
+Max S: 409600
