@@ -103,6 +103,12 @@ class Coco2MaskDataset(Dataset):
             category_ids = []
             count_label = 1
 
+            all_masks_num = len(annotations)
+            if all_masks_num >= 50:
+                os.environ['INFERENCE_MODE'] = "train"
+            else:
+                rate = random.uniform(0, 1)
+                os.environ['INFERENCE_MODE'] = 'test' if rate <= 0.33 else 'train'
             for annotation in annotations[:self.length]:
                 x, y, w, h = annotation["bbox"]
 

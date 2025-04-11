@@ -98,7 +98,8 @@ class AbstractDistillFinetuner(pl.LightningModule, ABC):
             self,
             T_model,
             S_model,
-            checkpoint_path,
+            T_checkpoint_path,
+            S_checkpoint_path,
             freeze_image_encoder=False,
             freeze_prompt_encoder=False,
             freeze_mask_decoder=False,
@@ -114,11 +115,11 @@ class AbstractDistillFinetuner(pl.LightningModule, ABC):
         super(AbstractDistillFinetuner, self).__init__()
 
         self.T_model = T_model
-        self.T_model = self.load_model(T_model, checkpoint_path)
+        self.T_model = self.load_model(T_model, T_checkpoint_path)
         self.T_model.to(device=self.device)
 
         self.S_model = S_model
-        self.S_model = self.load_model(S_model, checkpoint_path)
+        self.S_model = self.load_model(S_model, S_checkpoint_path)
         self.S_model.to(device=self.device)
 
         self.freeze_layers(freeze_image_encoder, freeze_prompt_encoder, freeze_mask_decoder)

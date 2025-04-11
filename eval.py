@@ -17,8 +17,8 @@ def main():
     
     parser = argparse.ArgumentParser()
     parser.add_argument("--model_type", type=str, default="vit_t", help="model type", choices=["vit_t","tiny_msam", "vit_h"])
-    # parser.add_argument("--checkpoint_path", type=str, default="/data2/wuxinrui/RA-L/MobileSAM/trained_models/wxr_modified_mobilesam/random_point_v2_bbox.pth", help="path to the checkpoint")
-    parser.add_argument("--checkpoint_path", type=str, default="/data2/wuxinrui/RA-L/MobileSAM/weights/mobile_sam.pt", help="path to the checkpoint")
+    parser.add_argument("--checkpoint_path", type=str, default="/data2/wuxinrui/RA-L/MobileSAM/trained_models/Distilled_encoder/Distilled.pth", help="path to the checkpoint")
+    # parser.add_argument("--checkpoint_path", type=str, default="/data2/wuxinrui/RA-L/MobileSAM/weights/mobile_sam.pt", help="path to the checkpoint")
     # parser.add_argument("--checkpoint_path", type=str, default="/data2/wuxinrui/RA-L/MobileSAM/weights/sam_vit_h_4b8939.pth", help="path to the checkpoint")
     parser.add_argument("--test_img_path", type=str, default="/data2/wuxinrui/Projects/ICCV/MIMC_FINAL/seen/test_list", help="the test image path")
     parser.add_argument("--label_path", type=str, default="/data2/wuxinrui/Projects/ICCV/jsons_for_salient_instance_segmentation/test_1_prompts.json", help="the test json path")
@@ -85,7 +85,7 @@ def main():
     
 
 
-    for img_file in tqdm(img_files[:], miniters=50):
+    for img_file in tqdm(img_files[:20], miniters=50):
         
         img_path = os.path.join(args.test_img_path, img_file)
         ext_name = img_file.split('.')[-1]
@@ -102,8 +102,8 @@ def main():
         output_path_bbox = os.path.join(visualize_mask_path, img_file.replace(ext_name, "_bbox_pred.png"))
         output_path_point = os.path.join(visualize_mask_path, img_file.replace(ext_name, "_point_pred.png"))
         
-        overlay_mask_on_image(bbox_pred_masks, output_path_bbox, image_path=img_path)
-        overlay_mask_on_image(point_pred_masks, output_path_point, image_path=img_path)
+        overlay_mask_on_image(bbox_pred_masks, output_path=output_path_bbox, image_path=img_path)
+        overlay_mask_on_image(point_pred_masks, output_path=output_path_point, image_path=img_path)
         
         
         bbox_metric_dict = calculate_metrics(bbox_pred_masks, image_masks)

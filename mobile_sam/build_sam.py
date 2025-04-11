@@ -107,6 +107,7 @@ def build_sam_vit_t(checkpoint=None):
         # with open(checkpoint, "rb") as f:
         #     state_dict = torch.load(f)
         mobile_sam.load_state_dict(state_dict)
+        print(f"T_model inited by {checkpoint}")
     return mobile_sam
 
 
@@ -168,8 +169,8 @@ def build_tiny_msam(checkpoint=None):
     if os.environ['INFERENCE_MODE'] == "test":
         mobile_sam = Sam(
                 image_encoder=TinyViT(img_size=1024, in_chans=3, num_classes=1000,
-                    embed_dims=[64, 64, 128, 320],
-                    depths=[1, 1, 4, 1],
+                    embed_dims=[64, 96, 128, 320],
+                    depths=[1, 2, 4, 1],
                     num_heads=[2, 4, 4, 10],
                     window_sizes=[7, 7, 14, 7],
                     mlp_ratio=4.,
@@ -205,15 +206,23 @@ def build_tiny_msam(checkpoint=None):
             with open(checkpoint, "rb") as f:
                 state_dict = torch.load(f)
             state_dict_filtered = {k: v for k, v in state_dict.items() if ("mask_decoder") not in k}
-        mobile_sam.load_state_dict(state_dict, strict=False)
+            mobile_sam.load_state_dict(state_dict, strict=False)
+            print(f"S_model inited by {checkpoint}")
+
+        else:
+            mobile_sam.image_encoder.apply(init_weights)
+            mobile_sam.prompt_encoder.apply(init_weights)
+            mobile_sam.mask_decoder.apply(init_weights)
+            print(f"S_model randomly inited")
+
         mobile_sam.eval()
         return mobile_sam
     
     elif os.environ['INFERENCE_MODE'] == "train":
         mobile_sam = Sam(
                 image_encoder=TinyViT(img_size=1024, in_chans=3, num_classes=1000,
-                    embed_dims=[64, 64, 128, 320],
-                    depths=[1, 1, 4, 1],
+                    embed_dims=[64, 96, 128, 320],
+                    depths=[1, 2, 4, 1],
                     num_heads=[2, 4, 4, 10],
                     window_sizes=[7, 7, 14, 7],
                     mlp_ratio=4.,
@@ -228,6 +237,18 @@ def build_tiny_msam(checkpoint=None):
                 mask_decoder=None,
                 pixel_mean=[123.675, 116.28, 103.53],
                 pixel_std=[58.395, 57.12, 57.375],)
+
+        if checkpoint is not None:
+            with open(checkpoint, "rb") as f:
+                state_dict = torch.load(f)
+                state_dict_filtered = {k: v for k, v in state_dict.items() if k in mobile_sam.state_dict()}
+            mobile_sam.load_state_dict(state_dict_filtered, strict=False)
+            print(f"S_model inited by {checkpoint}")
+        else:
+            mobile_sam.image_encoder.apply(init_weights)
+            mobile_sam.prompt_encoder.apply(init_weights)
+            mobile_sam.mask_decoder.apply(init_weights)
+            print(f"S_model randomly inited")
 
         mobile_sam.image_encoder.apply(init_weights)
         return mobile_sam

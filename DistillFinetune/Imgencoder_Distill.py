@@ -79,7 +79,8 @@ class Imgencoder_Distill(AbstractDistillFinetuner):
             self,
             T_model,
             S_model,
-            checkpoint_path,
+            T_checkpoint_path,
+            S_checkpoint_path,
             freeze_image_encoder=False,
             freeze_prompt_encoder=False,
             freeze_mask_decoder=False,
@@ -92,12 +93,13 @@ class Imgencoder_Distill(AbstractDistillFinetuner):
             multimask=False,
             use_bbox=False,
             max_steps=10000,
-            distill_weight=0.333  # 新增参数：蒸馏权重
+            distill_weight=1.2  # 新增参数：蒸馏权重
     ):
         super(Imgencoder_Distill, self).__init__(
             T_model=T_model,
             S_model=S_model,
-            checkpoint_path=checkpoint_path,
+            T_checkpoint_path=T_checkpoint_path,
+            S_checkpoint_path=S_checkpoint_path,
             freeze_image_encoder=freeze_image_encoder,
             freeze_prompt_encoder=freeze_prompt_encoder,
             freeze_mask_decoder=freeze_mask_decoder,
@@ -213,7 +215,7 @@ class Imgencoder_Distill(AbstractDistillFinetuner):
                     if not os.path.exists(training_visual_path):
                         os.makedirs(training_visual_path, exist_ok=True)
                     #G 1% to save images
-                    if random.random() < 0.01:
+                    if random.random() < 0.03:
                         output_path_combined = os.path.join(training_visual_path, f"{step}_{coco_image_name.replace(ext_name, '_combined.jpg')}")
 
 
@@ -225,14 +227,14 @@ class Imgencoder_Distill(AbstractDistillFinetuner):
 
                         #G check to avoid too many images in the folder
                         image_files = [f for f in os.listdir(training_visual_path) if f.endswith(('_combined.jpg'))]
-                        if len(image_files) > 30:
+                        if len(image_files) > 500:
                             #G randomly select three file prefixes
                             random_prefixes = random.sample(set(f.split('_combined.jpg')[0] for f in image_files), 3)
                             for prefix in random_prefixes:
-                                for suffix in ('_combined.jpg'):
-                                    file_to_delete = os.path.join(training_visual_path, f"{prefix}{suffix}")
-                                    if os.path.exists(file_to_delete):
-                                        os.remove(file_to_delete)
+                                suffix = ('_combined.jpg')
+                                file_to_delete = os.path.join(training_visual_path, f"{prefix}{suffix}")
+                                if os.path.exists(file_to_delete):
+                                    os.remove(file_to_delete)
                     #G ------- 计算IoU + 可视化输出--------G#
 
                     single_IoU = np.mean(iou_list)

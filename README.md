@@ -1,1 +1,1 @@
-A Repo for various Distillation-based SAM models.
+This is A Repo of various Distillation-based SAM models.

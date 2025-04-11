@@ -47,24 +47,25 @@ def main():
     # parser.add_argument('--val_anno', default="/data2/wuxinrui/Projects/ICCV/MIMC_FINAL/val-taxonomic_cleaned.json", )
     
     
-    # parser.add_argument("--train_data", default="/data2/wuxinrui/RA-L/MobileSAM/NEW_MIMC/images/train", type=str, required=False, help="path to the data root")
-    # parser.add_argument("--train_anno", default="/data2/wuxinrui/RA-L/MobileSAM/NEW_MIMC/annotations/train.json", type=str, required=False, help="path to the annotation file")
+    parser.add_argument("--train_data", default="/data2/wuxinrui/RA-L/MobileSAM/NEW_MIMC_1024/images/train", type=str, required=False, help="path to the data root")
+    parser.add_argument("--train_anno", default="/data2/wuxinrui/RA-L/MobileSAM/NEW_MIMC_1024/annotations/train.json", type=str, required=False, help="path to the annotation file")
 
-    # parser.add_argument("--val_data", default="/data2/wuxinrui/RA-L/MobileSAM/NEW_MIMC/images/val", type=str, required=False, help="path to the data root")
-    # parser.add_argument('--val_anno', default="/data2/wuxinrui/RA-L/MobileSAM/NEW_MIMC/annotations/val.json", )
+    parser.add_argument("--val_data", default="/data2/wuxinrui/RA-L/MobileSAM/NEW_MIMC_1024/images/val", type=str, required=False, help="path to the data root")
+    parser.add_argument('--val_anno', default="/data2/wuxinrui/RA-L/MobileSAM/NEW_MIMC_1024/annotations/val.json", )
     
-    parser.add_argument("--train_data", default="/data2/wuxinrui/Datasets/COCO/images/train2017", type=str, required=False, help="path to the data root")
-    parser.add_argument("--train_anno", default="/data2/wuxinrui/Datasets/COCO/annotations/instances_train2017.json", type=str, required=False, help="path to the annotation file")
+    # parser.add_argument("--train_data", default="/data2/wuxinrui/Datasets/COCO/images/train2017", type=str, required=False, help="path to the data root")
+    # parser.add_argument("--train_anno", default="/data2/wuxinrui/Datasets/COCO/annotations/instances_train2017.json", type=str, required=False, help="path to the annotation file")
 
-    parser.add_argument("--val_data", default="/data2/wuxinrui/Datasets/COCO/images/val2017", type=str, required=False, help="path to the data root")
-    parser.add_argument('--val_anno', default="/data2/wuxinrui/Datasets/COCO/annotations/instances_val2017_sampled_2000.json", type=str, required=False, help="path to the annotation file")
+    # parser.add_argument("--val_data", default="/data2/wuxinrui/Datasets/COCO/images/val2017", type=str, required=False, help="path to the data root")
+    # parser.add_argument('--val_anno', default="/data2/wuxinrui/Datasets/COCO/annotations/instances_val2017_sampled_2000.json", type=str, required=False, help="path to the annotation file")
     
     parser.add_argument("--Tar", default="Img_Encoder", choices=["Img_Encoder", "Mask_Decoder", "Prompt_Encoder"],type=str, required=False, help="target to be distilled")
 
 
     parser.add_argument("--T_model", default='vit_t', type=str, required=False, help="model type")
-    parser.add_argument("--S_model", default='tiny_msam', type=str, required=False, help="model type")
-    parser.add_argument("--checkpoint_path", default="/data2/wuxinrui/RA-L/MobileSAM/weights/mobile_sam.pt", type=str, required=False, help="path to the checkpoint")
+    parser.add_argument("--S_model", default='vit_t', type=str, required=False, help="model type")
+    parser.add_argument("--T_checkpoint_path", default="/data2/wuxinrui/RA-L/MobileSAM/weights/mobile_sam.pt", type=str, required=False, help="path to the checkpoint")
+    parser.add_argument("--S_checkpoint_path", default="/data2/wuxinrui/RA-L/MobileSAM/trained_models/Distilled_encoder/COCO_train_1epoch.pth", type=str, required=False, help="path to the checkpoint")
 
     # 添加一个名为multimask的参数，类型为布尔型，默认值为False，当该参数被指定时，其值为True，用于生成多掩码
     parser.add_argument("--multimask", action="store_true", help="generate multi masks")
@@ -79,7 +80,7 @@ def main():
     parser.add_argument("--num_points", type=int, default=3, help="number of random points")
     parser.add_argument("--length", type=int, default=50, help="the length of the chosen masks")
 
-    parser.add_argument("--learning_rate", type=float, default=5.0e-6, help="learning rate")
+    parser.add_argument("--learning_rate", type=float, default=5.0e-5, help="learning rate")
     parser.add_argument("--weight_decay", type=float, default=1e-2, help="weight decay")
     parser.add_argument("--metrics_interval", type=int, default=500, help="interval for logging metrics")
 
@@ -95,7 +96,7 @@ def main():
     log_dir = "./metrics_logs/" + args.Tar
     if args.Tar == "Img_Encoder":
         output_dir = "/data2/wuxinrui/RA-L/MobileSAM/trained_models/Distilled_encoder"
-        save_model_name = "Distilled.pth"
+        save_model_name = "COCO_MIMC.pth"
         if not os.path.exists(output_dir):
             os.mkdir(output_dir)
 
@@ -103,7 +104,8 @@ def main():
         model = Imgencoder_Distill(
             args.T_model,
             args.S_model,
-            args.checkpoint_path,
+            args.T_checkpoint_path,
+            args.S_checkpoint_path,
             freeze_image_encoder=False,
             freeze_prompt_encoder=True,
             freeze_mask_decoder=True,
@@ -153,17 +155,17 @@ def main():
 
     # trainer.validate(model=model, dataloaders=val_dataloader)
     trainer.fit(model)
-    save_checkpoint = {}
-    for k, v in model.S_model.state_dict().items():
-        if "S_model." in k:
-            # k = k.replace("S_model.", "")
-            save_checkpoint[k.replace("S_model.", "")] = v
+    # save_checkpoint = {}
+    # for k, v in model.S_model.state_dict().items():
+    #     if "S_model." in k:
+    #         # k = k.replace("S_model.", "")
+    #         save_checkpoint[k.replace("S_model.", "")] = v
+        
     # teacher_checkpoint = torch.load(args.checkpoint_path)
     # for k, v in teacher_checkpoint.items():
     #     if k not in save_checkpoint:
     #         save_checkpoint[k] = v
-
-    torch.save(save_checkpoint, os.path.join(output_dir, save_model_name))
+    torch.save(model, os.path.join(output_dir, save_model_name))
 
 if __name__ == "__main__":
     main()

@@ -1,0 +1,155 @@
+04/11/2025 16:44:43 - INFO - torch.distributed.nn.jit.instantiator -   Created a temporary directory at /tmp/tmp4idzw7q0
+04/11/2025 16:44:43 - INFO - torch.distributed.nn.jit.instantiator -   Writing /tmp/tmp4idzw7q0/_remote_module_non_scriptable.py
+/data2/wuxinrui/anaconda/envs/mobilesam/lib/python3.9/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/data2/wuxinrui/anaconda/envs/mobilesam/lib/python3.9/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/data2/wuxinrui/RA-L/MobileSAM/mobile_sam/modeling/tiny_vit_sam.py:665: UserWarning: Overwriting tiny_vit_5m_224 in registry with mobile_sam.modeling.tiny_vit_sam.tiny_vit_5m_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  return register_model(fn_wrapper)
+/data2/wuxinrui/RA-L/MobileSAM/mobile_sam/modeling/tiny_vit_sam.py:665: UserWarning: Overwriting tiny_vit_11m_224 in registry with mobile_sam.modeling.tiny_vit_sam.tiny_vit_11m_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  return register_model(fn_wrapper)
+/data2/wuxinrui/RA-L/MobileSAM/mobile_sam/modeling/tiny_vit_sam.py:665: UserWarning: Overwriting tiny_vit_21m_224 in registry with mobile_sam.modeling.tiny_vit_sam.tiny_vit_21m_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  return register_model(fn_wrapper)
+/data2/wuxinrui/RA-L/MobileSAM/mobile_sam/modeling/tiny_vit_sam.py:665: UserWarning: Overwriting tiny_vit_21m_384 in registry with mobile_sam.modeling.tiny_vit_sam.tiny_vit_21m_384. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  return register_model(fn_wrapper)
+/data2/wuxinrui/RA-L/MobileSAM/mobile_sam/modeling/tiny_vit_sam.py:665: UserWarning: Overwriting tiny_vit_21m_512 in registry with mobile_sam.modeling.tiny_vit_sam.tiny_vit_21m_512. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  return register_model(fn_wrapper)
+04/11/2025 16:44:48 - INFO - pytorch_lightning.utilities.rank_zero -   Using 16bit None Automatic Mixed Precision (AMP)
+04/11/2025 16:44:48 - INFO - pytorch_lightning.utilities.rank_zero -   GPU available: True (cuda), used: True
+04/11/2025 16:44:48 - INFO - pytorch_lightning.utilities.rank_zero -   TPU available: False, using: 0 TPU cores
+04/11/2025 16:44:48 - INFO - pytorch_lightning.utilities.rank_zero -   IPU available: False, using: 0 IPUs
+04/11/2025 16:44:48 - INFO - pytorch_lightning.utilities.rank_zero -   HPU available: False, using: 0 HPUs
+/data2/wuxinrui/anaconda/envs/mobilesam/lib/python3.9/site-packages/pytorch_lightning/trainer/configuration_validator.py:106: UserWarning: You passed in a `val_dataloader` but have no `validation_step`. Skipping val loop.
+  rank_zero_warn("You passed in a `val_dataloader` but have no `validation_step`. Skipping val loop.")
+04/11/2025 16:44:49 - INFO - lightning_fabric.utilities.distributed -   Initializing distributed: GLOBAL_RANK: 0, MEMBER: 1/4
+04/11/2025 16:44:51 - INFO - torch.distributed.nn.jit.instantiator -   Created a temporary directory at /tmp/tmpy87cso9q
+04/11/2025 16:44:51 - INFO - torch.distributed.nn.jit.instantiator -   Writing /tmp/tmpy87cso9q/_remote_module_non_scriptable.py
+04/11/2025 16:44:51 - INFO - torch.distributed.nn.jit.instantiator -   Created a temporary directory at /tmp/tmpqqeikuxr
+04/11/2025 16:44:51 - INFO - torch.distributed.nn.jit.instantiator -   Writing /tmp/tmpqqeikuxr/_remote_module_non_scriptable.py
+04/11/2025 16:44:51 - INFO - torch.distributed.nn.jit.instantiator -   Created a temporary directory at /tmp/tmp287ye7w8
+04/11/2025 16:44:51 - INFO - torch.distributed.nn.jit.instantiator -   Writing /tmp/tmp287ye7w8/_remote_module_non_scriptable.py
+/data2/wuxinrui/anaconda/envs/mobilesam/lib/python3.9/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/data2/wuxinrui/anaconda/envs/mobilesam/lib/python3.9/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/data2/wuxinrui/RA-L/MobileSAM/mobile_sam/modeling/tiny_vit_sam.py:665: UserWarning: Overwriting tiny_vit_5m_224 in registry with mobile_sam.modeling.tiny_vit_sam.tiny_vit_5m_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  return register_model(fn_wrapper)
+/data2/wuxinrui/RA-L/MobileSAM/mobile_sam/modeling/tiny_vit_sam.py:665: UserWarning: Overwriting tiny_vit_11m_224 in registry with mobile_sam.modeling.tiny_vit_sam.tiny_vit_11m_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  return register_model(fn_wrapper)
+/data2/wuxinrui/RA-L/MobileSAM/mobile_sam/modeling/tiny_vit_sam.py:665: UserWarning: Overwriting tiny_vit_21m_224 in registry with mobile_sam.modeling.tiny_vit_sam.tiny_vit_21m_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  return register_model(fn_wrapper)
+/data2/wuxinrui/RA-L/MobileSAM/mobile_sam/modeling/tiny_vit_sam.py:665: UserWarning: Overwriting tiny_vit_21m_384 in registry with mobile_sam.modeling.tiny_vit_sam.tiny_vit_21m_384. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  return register_model(fn_wrapper)
+/data2/wuxinrui/RA-L/MobileSAM/mobile_sam/modeling/tiny_vit_sam.py:665: UserWarning: Overwriting tiny_vit_21m_512 in registry with mobile_sam.modeling.tiny_vit_sam.tiny_vit_21m_512. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  return register_model(fn_wrapper)
+/data2/wuxinrui/anaconda/envs/mobilesam/lib/python3.9/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/data2/wuxinrui/anaconda/envs/mobilesam/lib/python3.9/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/data2/wuxinrui/RA-L/MobileSAM/mobile_sam/modeling/tiny_vit_sam.py:665: UserWarning: Overwriting tiny_vit_5m_224 in registry with mobile_sam.modeling.tiny_vit_sam.tiny_vit_5m_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  return register_model(fn_wrapper)
+/data2/wuxinrui/RA-L/MobileSAM/mobile_sam/modeling/tiny_vit_sam.py:665: UserWarning: Overwriting tiny_vit_11m_224 in registry with mobile_sam.modeling.tiny_vit_sam.tiny_vit_11m_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  return register_model(fn_wrapper)
+/data2/wuxinrui/RA-L/MobileSAM/mobile_sam/modeling/tiny_vit_sam.py:665: UserWarning: Overwriting tiny_vit_21m_224 in registry with mobile_sam.modeling.tiny_vit_sam.tiny_vit_21m_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  return register_model(fn_wrapper)
+/data2/wuxinrui/RA-L/MobileSAM/mobile_sam/modeling/tiny_vit_sam.py:665: UserWarning: Overwriting tiny_vit_21m_384 in registry with mobile_sam.modeling.tiny_vit_sam.tiny_vit_21m_384. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  return register_model(fn_wrapper)
+/data2/wuxinrui/RA-L/MobileSAM/mobile_sam/modeling/tiny_vit_sam.py:665: UserWarning: Overwriting tiny_vit_21m_512 in registry with mobile_sam.modeling.tiny_vit_sam.tiny_vit_21m_512. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  return register_model(fn_wrapper)
+/data2/wuxinrui/anaconda/envs/mobilesam/lib/python3.9/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/data2/wuxinrui/anaconda/envs/mobilesam/lib/python3.9/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/data2/wuxinrui/RA-L/MobileSAM/mobile_sam/modeling/tiny_vit_sam.py:665: UserWarning: Overwriting tiny_vit_5m_224 in registry with mobile_sam.modeling.tiny_vit_sam.tiny_vit_5m_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  return register_model(fn_wrapper)
+/data2/wuxinrui/RA-L/MobileSAM/mobile_sam/modeling/tiny_vit_sam.py:665: UserWarning: Overwriting tiny_vit_11m_224 in registry with mobile_sam.modeling.tiny_vit_sam.tiny_vit_11m_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  return register_model(fn_wrapper)
+/data2/wuxinrui/RA-L/MobileSAM/mobile_sam/modeling/tiny_vit_sam.py:665: UserWarning: Overwriting tiny_vit_21m_224 in registry with mobile_sam.modeling.tiny_vit_sam.tiny_vit_21m_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  return register_model(fn_wrapper)
+/data2/wuxinrui/RA-L/MobileSAM/mobile_sam/modeling/tiny_vit_sam.py:665: UserWarning: Overwriting tiny_vit_21m_384 in registry with mobile_sam.modeling.tiny_vit_sam.tiny_vit_21m_384. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  return register_model(fn_wrapper)
+/data2/wuxinrui/RA-L/MobileSAM/mobile_sam/modeling/tiny_vit_sam.py:665: UserWarning: Overwriting tiny_vit_21m_512 in registry with mobile_sam.modeling.tiny_vit_sam.tiny_vit_21m_512. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  return register_model(fn_wrapper)
+04/11/2025 16:45:00 - INFO - lightning_fabric.utilities.distributed -   Initializing distributed: GLOBAL_RANK: 1, MEMBER: 2/4
+04/11/2025 16:45:00 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 1
+04/11/2025 16:45:00 - INFO - lightning_fabric.utilities.distributed -   Initializing distributed: GLOBAL_RANK: 2, MEMBER: 3/4
+04/11/2025 16:45:00 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 2
+04/11/2025 16:45:00 - INFO - lightning_fabric.utilities.distributed -   Initializing distributed: GLOBAL_RANK: 3, MEMBER: 4/4
+04/11/2025 16:45:00 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 3
+04/11/2025 16:45:00 - INFO - torch.distributed.distributed_c10d -   Added key: store_based_barrier_key:1 to store for rank: 0
+04/11/2025 16:45:00 - INFO - torch.distributed.distributed_c10d -   Rank 0: Completed store-based barrier for key:store_based_barrier_key:1 with 4 nodes.
+04/11/2025 16:45:00 - INFO - pytorch_lightning.utilities.rank_zero -   ----------------------------------------------------------------------------------------------------
+distributed_backend=nccl
+All distributed processes registered. Starting with 4 processes
+----------------------------------------------------------------------------------------------------
+
+04/11/2025 16:45:00 - INFO - torch.distributed.distributed_c10d -   Rank 3: Completed store-based barrier for key:store_based_barrier_key:1 with 4 nodes.
+04/11/2025 16:45:00 - INFO - torch.distributed.distributed_c10d -   Rank 1: Completed store-based barrier for key:store_based_barrier_key:1 with 4 nodes.
+04/11/2025 16:45:00 - INFO - torch.distributed.distributed_c10d -   Rank 2: Completed store-based barrier for key:store_based_barrier_key:1 with 4 nodes.
+/data2/wuxinrui/anaconda/envs/mobilesam/lib/python3.9/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:612: UserWarning: Checkpoint directory /data2/wuxinrui/RA-L/MobileSAM/trained_models/Distilled_encoder exists and is not empty.
+  rank_zero_warn(f"Checkpoint directory {dirpath} exists and is not empty.")
+04/11/2025 16:45:04 - INFO - pytorch_lightning.accelerators.cuda -   LOCAL_RANK: 2 - CUDA_VISIBLE_DEVICES: [0,1,2,3]
+04/11/2025 16:45:04 - INFO - pytorch_lightning.accelerators.cuda -   LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3]
+04/11/2025 16:45:04 - INFO - pytorch_lightning.accelerators.cuda -   LOCAL_RANK: 1 - CUDA_VISIBLE_DEVICES: [0,1,2,3]
+04/11/2025 16:45:04 - INFO - pytorch_lightning.accelerators.cuda -   LOCAL_RANK: 3 - CUDA_VISIBLE_DEVICES: [0,1,2,3]
+04/11/2025 16:45:04 - INFO - pytorch_lightning.callbacks.model_summary -   
+  | Name    | Type | Params
+---------------------------------
+0 | T_model | Sam  | 10.1 M
+1 | S_model | Sam  | 10.1 M
+---------------------------------
+10.1 M    Trainable params
+10.1 M    Non-trainable params
+20.3 M    Total params
+40.520    Total estimated model params size (MB)
+loading annotations into memory...
+Done (t=0.21s)
+creating index...
+index created!
+loading annotations into memory...
+Done (t=0.06s)
+creating index...
+index created!
+T_model inited by /data2/wuxinrui/RA-L/MobileSAM/weights/mobile_sam.pt
+T_model inited by /data2/wuxinrui/RA-L/MobileSAM/trained_models/Distilled_encoder/COCO_train_1epoch.pth
+Training: 0it [00:00, ?it/s]Training:   0%|          | 0/1818 [00:00<?, ?it/s]Epoch 0:   0%|          | 0/1818 [00:00<?, ?it/s] loading annotations into memory...
+Done (t=0.22s)
+creating index...
+index created!
+loading annotations into memory...
+Done (t=0.06s)
+creating index...
+index created!
+T_model inited by /data2/wuxinrui/RA-L/MobileSAM/weights/mobile_sam.pt
+T_model inited by /data2/wuxinrui/RA-L/MobileSAM/trained_models/Distilled_encoder/COCO_train_1epoch.pth
+loading annotations into memory...
+Done (t=0.22s)
+creating index...
+index created!
+loading annotations into memory...
+Done (t=0.06s)
+creating index...
+index created!
+T_model inited by /data2/wuxinrui/RA-L/MobileSAM/weights/mobile_sam.pt
+T_model inited by /data2/wuxinrui/RA-L/MobileSAM/trained_models/Distilled_encoder/COCO_train_1epoch.pth
+loading annotations into memory...
+Done (t=0.21s)
+creating index...
+index created!
+loading annotations into memory...
+Done (t=0.06s)
+creating index...
+index created!
+T_model inited by /data2/wuxinrui/RA-L/MobileSAM/weights/mobile_sam.pt
+T_model inited by /data2/wuxinrui/RA-L/MobileSAM/trained_models/Distilled_encoder/COCO_train_1epoch.pth
+/data2/wuxinrui/anaconda/envs/mobilesam/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:131: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn("Detected call of `lr_scheduler.step()` before `optimizer.step()`. "
+/data2/wuxinrui/anaconda/envs/mobilesam/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:131: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn("Detected call of `lr_scheduler.step()` before `optimizer.step()`. "
+/data2/wuxinrui/anaconda/envs/mobilesam/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:131: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn("Detected call of `lr_scheduler.step()` before `optimizer.step()`. "
+/data2/wuxinrui/anaconda/envs/mobilesam/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:131: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn("Detected call of `lr_scheduler.step()` before `optimizer.step()`. "
+Epoch 0:   0%|          | 1/1818 [00:04<2:09:11,  4.27s/it]/data2/wuxinrui/anaconda/envs/mobilesam/lib/python3.9/site-packages/pytorch_lightning/callbacks/progress/base.py:249: UserWarning: The progress bar already tracks a metric with the name(s) 'loss' and `self.log('loss', ..., prog_bar=True)` will overwrite this value.  If this is undesired, change the name or override `get_metrics()` in the progress bar callback.
+  rank_zero_warn(
+Epoch 0:   0%|          | 1/1818 [00:04<2:09:14,  4.27s/it, loss=0.316, v_num=73, loss_focal=0.000944, loss_dice=0.0988, distill_loss=0.163, acc=0.996, av_BS_IoU=0.968, av_BS_pa=0.996, loss_iou=0.0124, train_per_mask_iou=0.970]Epoch 0:   0%|          | 2/1818 [00:04<1:14:00,  2.45s/it, loss=0.316, v_num=73, loss_focal=0.000944, loss_dice=0.0988, distill_loss=0.163, acc=0.996, av_BS_IoU=0.968, av_BS_pa=0.996, loss_iou=0.0124, train_per_mask_iou=0.970]Epoch 0:   0%|          | 2/1818 [00:04<1:14:01,  2.45s/it, loss=2.330, v_num=73, loss_focal=0.163, loss_dice=0.431, distill_loss=0.167, acc=0.886, av_BS_IoU=0.358, av_BS_pa=0.887, loss_iou=0.136, train_per_mask_iou=0.660]     Epoch 0:   0%|          | 3/1818 [00:05<58:46,  1.94s/it, loss=2.330, v_num=73, loss_focal=0.163, loss_dice=0.431, distill_loss=0.167, acc=0.886, av_BS_IoU=0.358, av_BS_pa=0.887, loss_iou=0.136, train_per_mask_iou=0.660]  Epoch 0:   0%|          | 3/1818 [00:05<58:47,  1.94s/it, loss=0.438, v_num=73, loss_focal=0.00357, loss_dice=0.168, distill_loss=0.148, acc=0.197, av_BS_IoU=0.797, av_BS_pa=0.990, loss_iou=0.0301, train_per_mask_iou=0.745]Epoch 0:   0%|          | 4/1818 [00:06<48:44,  1.61s/it, loss=0.438, v_num=73, loss_focal=0.00357, loss_dice=0.168, distill_loss=0.148, acc=0.197, av_BS_IoU=0.797, av_BS_pa=0.990, loss_iou=0.0301, train_per_mask_iou=0.745]Epoch 0:   0%|          | 4/1818 [00:06<48:44,  1.61s/it, loss=1.030, v_num=73, loss_focal=0.0065, loss_dice=0.449, distill_loss=0.224, acc=0.944, av_BS_IoU=0.514, av_BS_pa=0.969, loss_iou=0.0326, train_per_mask_iou=0.668] 
